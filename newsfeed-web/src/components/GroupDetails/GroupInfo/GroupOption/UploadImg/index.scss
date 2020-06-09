@@ -1,0 +1,33 @@
+.uploddBox {
+  box-sizing: border-box;
+}
+.groupAvatar {
+  font-size: 12px;
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.UploadImg {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.uploadInput {
+  visibility: hidden;
+}
+.groupImg {
+  color: #0c293a;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.showHeadImg {
+  :global {
+    .ant-modal-close-x {
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+    }
+  }
+}

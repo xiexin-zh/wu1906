@@ -1,0 +1,80 @@
+.applyConfirm :global .ant-modal-content {
+  width: 585px;
+}
+
+.applyConfirm :global .ant-modal-body {
+  padding: 0;
+}
+
+// .applyConfirm :global .ant-modal-header {
+//   width: 585px;
+//   height: 65px;
+//   border-radius: 3px;
+//   background-color: #36485e;
+// }
+
+// .applyConfirm :global .ant-modal-header .ant-modal-title {
+//   text-align: center;
+//   font-family: PingFangTC;
+//   font-size: 16px;
+//   font-weight: 600;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: normal;
+//   color: #ffffff;
+// }
+
+.applyConfirm :global .ant-modal-close-x {
+  color: white;
+}
+
+.confirm {
+  height: 187px;
+  width: 100%;
+}
+
+.confirm .confirContent {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangTC;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #36485e;
+}
+
+.confirm .confirBtn {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.confirm .confirmCancel,
+.confirm .confirmOk {
+  width: 280px;
+  height: 50px;
+  object-fit: contain;
+  box-shadow: 0 0 2px 0 #edf0f7;
+  border: solid 1px #dce1ef;
+  background-color: #d8deec;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: SourceHanSansTC;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  color: #36485e;
+  cursor: pointer;
+}
+.applyName {
+  font-weight: 800;
+}

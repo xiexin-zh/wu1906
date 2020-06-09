@@ -1,0 +1,90 @@
+.modalContent {
+  max-height: 70vh;
+
+  :global {
+    // modal样式
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-tabs-tabpane {
+      height: 360px;
+    }
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+
+    //tabs样式
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+    .ant-tabs-nav {
+      width: 100%;
+      & > div {
+        display: flex;
+      }
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+      .ant-tabs-nav-container,
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        height: 50px;
+      }
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        flex: 1 1;
+        margin-right: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.27px;
+        color: #36485e;
+      }
+      .ant-tabs-tab {
+        background-color: #edf0f7;
+      }
+      .ant-tabs-tab-active {
+        background-color: #dae2ed;
+      }
+    }
+  }
+  &.hideNav {
+    :global {
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+        .ant-tabs-nav-container,
+        .ant-tabs-tab,
+        .ant-tabs-tab-active {
+          height: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.userBox {
+  height: 360px;
+}

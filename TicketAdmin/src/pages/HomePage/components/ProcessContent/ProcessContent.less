@@ -1,0 +1,119 @@
+.ProcessContentBox {
+  flex: 1 0;
+  width: 485px;
+  // max-width: 950px;
+  // height: 424px;
+  padding: 19px 20px 40px 20px;
+  background: rgba(255, 255, 255, 1);
+  .agencyTotalBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    margin-bottom: 45px;
+    .agencyTotalFont {
+      flex: 1 0 auto;
+      width: 72px;
+      height: 18px;
+      color: #249fde;
+      font-weight: 600;
+      font-size: 16px;
+      img {
+        margin-right: 7px;
+      }
+    }
+    .datePickerBox {
+      display: flex;
+
+      .selectWeek {
+        margin-right: 10px;
+        border: 1px solid rgba(204, 204, 204, 1);
+        border-radius: 4px;
+        span {
+          display: inline-block;
+          width: 60px;
+          height: 32px;
+          font-weight: 400;
+          font-size: 14px;
+          font-family: MicrosoftYaHei;
+          line-height: 32px;
+          text-align: center;
+          cursor: pointer;
+        }
+        .spanActive {
+          color: #fff;
+          background: rgba(0, 145, 228, 1);
+        }
+      }
+    }
+  }
+  :global {
+    .ant-table-body {
+      overflow: auto !important;
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #249fde;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #249fde;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f2f9fd;
+        border-radius: 5px;
+        box-shadow: 0;
+      }
+    }
+    .ant-table-thead > tr > th {
+      width: 80px;
+      padding: 0 16px 16px 16px;
+      background: #fff;
+      border-right: 1px solid rgba(234, 239, 244, 1);
+      border-bottom: none;
+    }
+    .ant-table-tbody > tr > td:not(:first-child) {
+      font-weight: bold;
+    }
+    .ant-table-tbody > tr > td:first-child {
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .ant-table-tbody > tr > td {
+      width: 80px;
+      text-align: center;
+      border-right: 1px solid rgba(234, 239, 244, 1);
+      border-bottom: none;
+    }
+  }
+  .tableHeadTr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    color: rgba(36, 159, 222, 1);
+    background: rgba(242, 249, 253, 1);
+    border-radius: 6px;
+  }
+  .headActive {
+    position: relative;
+    color: #fff;
+    background: linear-gradient(-30deg, rgba(9, 142, 210, 1), rgba(0, 169, 255, 1));
+  }
+  .headActive::after {
+    position: absolute;
+    bottom: -6px;
+    left: 45%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid rgba(9, 142, 210, 1);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: '';
+  }
+}
+.thFontColor {
+  color: #f90;
+}

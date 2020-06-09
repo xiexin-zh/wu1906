@@ -1,0 +1,68 @@
+.createpost {
+  :global {
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-wrap {
+      z-index: 10001;
+    }
+    .ant-btn-primary {
+      width: 77px;
+      height: 40px;
+      background-color: #edf0f7;
+      border: none;
+
+      span {
+        font-family: PingFangTC;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0c293a;
+      }
+    }
+
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+
+    .ant-input {
+      outline: none;
+      border-style: none;
+      overflow: hidden;
+    }
+
+    .ant-select {
+      margin-right: 9px;
+    }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.noticeInfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 92px;
+  border-bottom: 1px solid #edf0f7;
+  cursor: pointer;
+}
+
+.unread {
+  background-color: #edf0f7;
+}
+
+.noticeInfoBox p {
+  margin: 0;
+}
+
+.noticeContent {
+  width: 246px;
+}
+
+.noticeTitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #36485e;
+  word-break: break-all;
+  vertical-align: top;
+}
+
+.noticeMainContent {
+  font-size: 12px;
+  color: #36485e;
+}
+
+.noticeTextBox {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 60px;
+}
+
+.timeStyle {
+  font-size: 10px;
+  font-weight: 600;
+  color: #a4a4a4;
+}
+
+.moreBlue {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background-image: url('../images/icn-more-blue.svg');
+}
+
+.avatarIconBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarIconBox :global(.ant-avatar) {
+  background-color: #dbe1ec;
+}
+
+.eachMarkIcon {
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  z-index: 1;
+}
+
+.follow {
+  background-image: url('../images/invalidName@3x1.png');
+}
+
+.userPost {
+  background-image: url('../images/follow@3x.png');
+}
+
+.groupPost {
+  background-image: url('../images/group@3x.png');
+}
+
+.like {
+  background-image: url('../images/like@3x.png');
+}
+
+.share {
+  background-image: url('../images/newsfeed_share@3x.png');
+}
+
+.topPost {
+  background-image: url('../images/newsfeed_top@3x.png');
+}
+
+.reply {
+  background-image: url('../images/comment@3x.png');
+}
+
+.tag {
+  background-image: url('../images/newsfeed_tag@3x.png');
+}
+
+.noticeTool {
+  width: 172px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tipIcon {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  font-size: 14px;
+  color: #36485e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.tipIcon:hover {
+  background-color: #dae2ed;
+}
+
+.tipIcon + .tipIcon {
+  border-top: 2px solid #d9dad5;
+}
+
+.tipIcon > img {
+  margin: 0 16px 0 20px;
+}
+
+.likeIcon {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+}
+
+.cry {
+  background-image: url('../../../../assets/images/icon/like.png');
+  background-position: -57px -1355px;
+}
+.praise {
+  background-image: url('../../../../assets/images/icon/like.png');
+  background-position: -19px -1355px;
+}
+.laugh {
+  background-image: url('../../../../assets/images/icon/like.png');
+  background-position: 0 -1355px;
+}
+.shock {
+  background-image: url('../../../../assets/images/icon/like.png');
+  background-position: 0 -1374px;
+}
+.tongue {
+  background-image: url('../../../../assets/images/icon/like.png');
+  background-position: -38px -1355px;
+}
+.anger {
+  background-image: url('../../../../assets/images/icon/like.png');
+  background-position: -42px -1334px;
+}

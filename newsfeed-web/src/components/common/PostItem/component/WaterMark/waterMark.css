@@ -1,0 +1,30 @@
+.box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.imgWrapper {
+  height: 100%;
+  max-width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.loadingBox {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

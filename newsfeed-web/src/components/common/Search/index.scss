@@ -1,0 +1,36 @@
+.searchBox {
+  display: flex;
+  height: 50px;
+  border-radius: 2px;
+  border: solid 1px #979797;
+  background-color: #ffffff;
+  align-items: center;
+  flex-grow: 1;
+  .content {
+    width: 20px;
+    height: 20px;
+    margin-right: 19px;
+    margin-left: 19px;
+  }
+}
+.search {
+  height: 100%;
+  :global {
+    .ant-input-wrapper,
+    .ant-input,
+    .ant-input-group-addon,
+    .ant-btn-primary {
+      height: 100%;
+      border: none;
+      box-sizing: border-box;
+      box-shadow: none;
+    }
+    .ant-btn-primary {
+      width: 80px;
+      background-color: #dae2ed;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0c293a;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.bgContainer {
+  height: 428px;
+  position: relative;
+}
+.detailsContent {
+  overflow-y: auto;
+  height: calc(100vh - 80px);
+}
+.bgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.personalContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.personalAside {
+  flex: 0 0 290px;
+}
+
+.buttonBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.personalContainer .centerBox {
+  flex: 1;
+}
+
+.button {
+  width: 134px;
+  height: 45px;
+  border-radius: 7px;
+  border: solid 1px #c3cedd;
+  background-color: #dae2ed;
+  font-size: 14px;
+  color: #0c293a;
+  cursor: pointer;
+}
+
+.button + .button {
+  margin-left: 11px;
+}

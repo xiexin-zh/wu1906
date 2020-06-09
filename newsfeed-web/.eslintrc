@@ -1,0 +1,7 @@
+{
+  "extends": "umi",
+  "globals": {
+    "APP_VERSION": false,
+    "CLIENT_ID": false
+  }
+}

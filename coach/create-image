@@ -1,0 +1,5 @@
+#!/bin/sh
+
+## ./create-image sunpeople/sunkitchen
+
+docker build -t $1 .

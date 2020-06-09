@@ -1,0 +1,75 @@
+.KnowledgeBaseBox {
+  flex: 1 0 auto;
+  width: 659px;
+  // height: 496px;
+  padding: 19px 20px 40px 20px;
+  background: rgba(255, 255, 255, 1);
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(36, 159, 222, 1);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    img {
+      margin-right: 7px;
+    }
+    .input {
+      width: 200px;
+      height: 32px;
+      border-radius: 4px;
+    }
+  }
+  main {
+    margin-top: 8px;
+    :global {
+      .ant-collapse,
+      .ant-collapse-content,
+      .ant-collapse > .ant-collapse-item {
+        border: none;
+      }
+      .ant-collapse-header {
+        height: 38px;
+        background: #f2f9fd;
+        border-radius: 4px;
+      }
+      .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+        padding: 4px 16px;
+      }
+      .ant-collapse-content-box {
+        padding: 16px 0 0 0;
+      }
+      .ant-spin-container {
+        padding: 0 13px 0 13px;
+      }
+    }
+    .panelHeader {
+      color: rgba(36, 159, 222, 1);
+      font-weight: bold;
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+    }
+    .panelHeader::before {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 14px;
+      vertical-align: middle;
+      background: url('../../images/zhishiku.png') no-repeat;
+      background-position: center;
+      border-radius: 4px;
+      content: '';
+    }
+    .itemMetaDes {
+      width: 97px;
+      height: 22px;
+      margin-right: 20px;
+      color: rgba(36, 159, 222, 1);
+      font-weight: 400;
+      text-align: center;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(36, 159, 222, 1);
+      border-radius: 2px;
+    }
+  }
+}

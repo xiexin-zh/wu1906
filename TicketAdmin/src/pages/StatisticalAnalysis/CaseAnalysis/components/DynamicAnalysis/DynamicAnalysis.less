@@ -1,0 +1,152 @@
+.DynamicAnalysisBox {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main {
+    .proBox {
+      display: flex;
+      width: 100%;
+      height: 196px;
+      margin-top: 24px;
+      margin-bottom: 22px;
+      background: rgba(36, 159, 222, 0.05);
+    }
+    .proBoxLeft {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      padding: 0 40px;
+      .itemProBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      i {
+        display: inline-block;
+        width: 8px;
+        height: 64px;
+        background: rgba(36, 159, 222, 0.1);
+      }
+    }
+    .proBoxRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .itemBoxs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        :global {
+          .ant-progress-text {
+            color: #fa6400;
+            font-weight: 500;
+          }
+          .ant-progress-outer,
+          .ant-progress-inner {
+            width: 200px;
+            height: 16px;
+            margin: 0;
+            padding: 0;
+          }
+          .ant-progress-bg {
+            height: 16px !important;
+          }
+        }
+      }
+    }
+    .callTheme {
+      width: 505px;
+      height: 262px;
+      padding: 14px 0 0 24px;
+      background: rgba(36, 159, 222, 0.05);
+      p {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 400;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+      .callThemeContent {
+        display: flex;
+        align-items: center;
+        .callThemeCategory {
+          display: flex;
+          flex-direction: column;
+        }
+        .personal {
+          margin-bottom: 16px;
+        }
+        .enterprise span,
+        .personal span {
+          margin-left: 29px;
+        }
+        .enterprise i,
+        .personal i {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-right: 16px;
+        }
+      }
+    }
+    .jobTypeBox {
+      width: 548px;
+      padding: 14px 0 0 24px;
+      p {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 400;
+        font-size: 16px;
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+      :global {
+        .ant-table-thead > tr > th {
+          text-align: center;
+          background: rgba(36, 159, 222, 0.1);
+        }
+        .ant-table-tbody > tr > td {
+          padding: 10px 10px;
+          text-align: center;
+        }
+      }
+    }
+    .roundCake {
+      display: flex;
+    }
+    .btnState {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      :global {
+        .ant-radio-button-wrapper {
+          width: 40px;
+          height: 32px;
+          padding: 0 5px;
+        }
+        .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+          color: #fff;
+          background: rgba(36, 159, 222, 1);
+        }
+      }
+    }
+    :global {
+      .echarts-for-react canvas {
+        top: 10px !important;
+      }
+    }
+  }
+  .createTime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .rangePicker {
+      width: 210px;
+      :global {
+        .ant-calendar-picker-input {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

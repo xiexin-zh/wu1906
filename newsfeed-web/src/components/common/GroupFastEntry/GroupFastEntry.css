@@ -1,0 +1,77 @@
+.groupItemContainer {
+  padding: 10px 7px;
+  margin: 0 8px;
+  border-bottom: solid 1px #dae2ed;
+}
+
+.groupItemContainer > h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0c293a;
+}
+
+.asideItemContainer {
+  padding: 11px 12px;
+  color: #0c293a;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  word-break: break-word;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.activeItme {
+  background-color: #dae2ed;
+}
+
+.noAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.asideItemContainer:hover {
+  background-color: #dae2ed;
+}
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTop .loadMore {
+  font-family: PingFangTC;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.86px;
+  color: #36485e;
+  cursor: pointer;
+}
+.headerTop > h4 {
+  margin: 0;
+}
+.text {
+  display: inline-block;
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* margin-left: 20px; */
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.downIcon{
+  width: 10px;
+  height: 6px;
+}
+
+.seeMore{
+  margin-left: 10px;
+}

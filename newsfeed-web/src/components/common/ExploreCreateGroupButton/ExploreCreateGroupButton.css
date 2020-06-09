@@ -1,0 +1,40 @@
+.btnBox {
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 13px;
+}
+
+.personalBtnBox {
+  padding: 14px 0 0 0;
+}
+
+.button {
+  border-radius: 7px;
+  border: solid 1px #c3cedd;
+  background-color: #dae2ed;
+  font-size: 14px;
+  color: #0c293a;
+  cursor: pointer;
+}
+
+.button + .button {
+  margin-left: 11px;
+}
+
+.groupBtn {
+  width: 134px;
+  height: 45px;
+}
+.personalBtn {
+  width: 109px;
+  height: 30px;
+}
+
+.trackingGroup {
+  width: 64px;
+  height: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0c293a;
+  margin: 9.8px 0 0 0;
+}

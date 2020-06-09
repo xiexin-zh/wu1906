@@ -1,0 +1,207 @@
+<template>
+  <div class="addForm">
+    <el-form
+      ref="editUser"
+      :model="form"
+      :rules="rules"
+      label-position="left"
+      label-width="80px"
+      class="form"
+    >
+      <el-form-item label="姓名" prop="u_name">
+        <el-input v-model="form.u_name"></el-input>
+      </el-form-item>
+      <el-form-item label="编号" prop="u_number">
+        <el-input v-model="form.u_number"></el-input>
+      </el-form-item>
+      <el-form-item label="组织单位" prop="u_class">
+        <el-input v-model="form.u_class"></el-input>
+      </el-form-item>
+      <el-form-item label="出生日期" prop="u_birthday">
+        <el-input v-model="form.u_birthday"></el-input>
+      </el-form-item>
+      <el-form-item label="民族" prop="u_nation">
+        <el-input v-model="form.u_nation"></el-input>
+      </el-form-item>
+      <el-form-item label="手机号" prop="u_mobile">
+        <el-input v-model="form.u_mobile"></el-input>
+      </el-form-item>
+      <el-form-item label="身份证号" prop="u_identity">
+        <el-input v-model="form.u_identity"></el-input>
+      </el-form-item>
+      <el-form-item label="性别" prop="u_sex">
+        <el-radio-group v-model="form.u_sex">
+          <el-radio label="男"></el-radio>
+          <el-radio label="女"></el-radio>
+        </el-radio-group>
+      </el-form-item>
+    </el-form>
+    <div class="footerBtn">
+      <el-button @click="cancelSave">取 消</el-button>
+      <el-button type="primary" @click="submit('editUser')">确定</el-button>
+    </div>
+  </div>
+</template>
+
+<script>
+/* eslint-disable */
+import * as userData from "@/api/user";
+import {
+  getLength,
+  regTel,
+  regNumber,
+  regClass,
+  regBirthday,
+  regIdCard,
+  regCode
+} from "@/utils/transform";
+
+export default {
+  props: ["nowUser"],
+  data() {
+    const validateName = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入用户名"));
+      } else if (getLength(value) > 20) {
+        callback(new Error("长度:中文10个字，英文20个字母"));
+      } else {
+        callback();
+      }
+    };
+    const validateNumber = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入编号"));
+      } else if (!regNumber(value)) {
+        callback(new Error("长度:1-10位，包含汉字、字母、下划线 _ 或连接符 -"));
+      } else {
+        callback();
+      }
+    };
+    const validateClass = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入组织单位"));
+      } else if (getLength(value) > 50 || !regClass(value)) {
+        callback(new Error("长度限制中文25个汉字，英文50个字母"));
+      } else {
+        callback();
+      }
+    };
+    const validateBirthday = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入生日"));
+      } else if (!regBirthday(value)) {
+        callback(new Error("请输入正确的日期"));
+      } else {
+        callback();
+      }
+    };
+    const validateNation = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入民族"));
+      } else {
+        callback();
+      }
+    };
+    const validateMobile = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入手机号"));
+      } else if (!regTel(value)) {
+        callback(new Error("请输入正确的手机号"));
+      } else {
+        callback();
+      }
+    };
+    const validateIdentity = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入身份证号"));
+      } else if (!regIdCard(value)) {
+        callback(new Error("身份证号码格式错误"));
+      } else {
+        callback();
+      }
+    };
+
+    return {
+      form: {
+        u_number: "",
+        u_identity: "",
+        u_name: "",
+        u_nation: "",
+        u_birthday: "",
+        u_sex: "男",
+        u_class: "",
+        u_mobile: "",
+      },
+      rules: {
+        u_name: [{ required: true, validator: validateName, trigger: "blur" }],
+        u_number: [
+          { required: true, validator: validateNumber, trigger: "blur" }
+        ],
+        u_class: [
+          { required: true, validator: validateClass, trigger: "blur" }
+        ],
+        u_birthday: [
+          { required: true, validator: validateBirthday, trigger: "blur" }
+        ],
+        u_nation: [
+          { required: true, validator: validateNation, trigger: "blur" }
+        ],
+        u_mobile: [
+          { required: true, validator: validateMobile, trigger: "blur" }
+        ],
+        u_identity: [
+          { required: true, validator: validateIdentity, trigger: "blur" }
+        ]
+      }
+    };
+  },
+  methods: {
+    submit(editUser) {
+      const _this = this;
+      this.$refs[editUser].validate(valid => {
+        if (valid) {
+          _this.editUserData();
+        } else {
+          return false;
+        }
+      });
+    },
+    async editUserData() {
+      const res = await userData.addUser({
+        surveyId: this.rowId,
+        u_name: this.form.u_name,
+        u_sex: this.form.u_sex == "男" ? "0" : "1",
+        u_class: this.form.u_class,
+        u_number: this.form.u_number,
+        u_birthday: this.form.u_birthday,
+        u_identity: this.form.u_identity,
+        u_nation: this.form.u_nation,
+        u_mobile: this.form.u_mobile,
+        u_id: this.form.u_id
+      });
+      if (res.success) {
+        this.$message.success("编辑成功");
+        this.$emit("cancelEdit", true);
+      } else {
+        this.$message.error("编辑失败");
+      }
+    },
+    cancelSave() {
+      this.$emit("cancelEdit", false);
+    }
+  },
+  mounted() {
+    this.form = this.nowUser;
+  }
+};
+</script>
+
+<style scoped>
+.addForm {
+}
+.footerBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+</style>

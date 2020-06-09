@@ -1,0 +1,108 @@
+.loadMore {
+  // height: 70vh;
+  overflow: hidden;
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+    .ant-tabs-nav {
+      width: 100%;
+      & > div {
+        display: flex;
+      }
+    }
+    .ant-tabs-tabpane-active {
+      // margin-top: 100px;
+      margin-top: 50px;
+      height: 500px;
+      overflow-y: auto;
+    }
+    .ant-tabs-tabpane-active::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    // 去掉inout的聚焦框
+    .ant-input-affix-wrapper .ant-input:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        height: 50px;
+      }
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        flex: 1 1;
+        margin-right: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.27px;
+        color: #36485e;
+      }
+      .ant-tabs-tab {
+        background-color: #edf0f7;
+      }
+      .ant-tabs-tab-active {
+        background-color: #dae2ed;
+      }
+      .ant-tabs-nav-container {
+        height: 50px;
+        z-index: 999;
+        width: 585px;
+        position: absolute;
+        // margin-top: 50px;
+      }
+    }
+  }
+
+  .listTitle{
+    padding: 10px;
+    border-bottom: 1px solid #edf0f7;
+  }
+}
+
+.allGroups {
+  width: 56px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #36485e;
+  padding: 0;
+  margin: 10px 0 0 20px;
+}
+.loadMore::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+.loadMore::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #ffffff;
+  background-color: #ffffff;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+.loadMore::-webkit-scrollbar-thumb {
+  border-radius: 19px;
+  background-color: #dae2ed;
+}
+
+.header {
+  height: 37px;
+  background-color: #dae2ed;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0c293a;
+}

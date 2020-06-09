@@ -1,0 +1,33 @@
+.asideItemContainer {
+  padding: 11px 12px;
+  color: #0c293a;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  word-break: break-word;
+}
+.activeItme {
+  background-color: #dae2ed;
+}
+.asideItemContainer:hover {
+  background-color: #dae2ed;
+}
+.tagAvatar {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; */
+  float: left;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.allAvatar {
+  background-image: url('assets/images/icon/icon-all-blue.svg');
+}
+.groupAvatar {
+  background-image: url('assets/images/icon/icon-group-blue.svg');
+  border-radius: 50%;
+}

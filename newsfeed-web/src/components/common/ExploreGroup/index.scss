@@ -1,0 +1,203 @@
+$height: 600px;
+.ExploreGroupModal {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-content {
+      width: 585px;
+    }
+    .ant-modal-header {
+      width: 585px;
+      // height: 65px;
+      border-radius: 3px;
+      background-color: #36485e;
+
+      // .ant-modal-title {
+      //   text-align: center;
+      //   font-family: PingFangTC;
+      //   font-size: 16px;
+      //   font-weight: 600;
+      //   font-style: normal;
+      //   font-stretch: normal;
+      //   line-height: normal;
+      //   letter-spacing: normal;
+      //   color: #ffffff;
+      // }
+    }
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+}
+.ExploreGroup {
+  // background: white;
+
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+    .ant-tabs-nav {
+      width: 100%;
+      & > div {
+        display: flex;
+      }
+    }
+    .ant-tabs-tabpane-active {
+      margin-top: 100px;
+      height: 500px;
+      overflow-y: auto;
+    }
+    .ant-tabs-tabpane-active::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    // 去掉inout的聚焦框
+    .ant-input-affix-wrapper .ant-input:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        height: 50px;
+      }
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        flex: 1 1;
+        margin-right: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.27px;
+        color: #36485e;
+      }
+      .ant-tabs-tab {
+        background-color: #edf0f7;
+      }
+      .ant-tabs-tab-active {
+        background-color: #dae2ed;
+      }
+      .ant-tabs-nav-container {
+        height: 50px;
+        z-index: 999;
+        width: 585px;
+        position: absolute;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  padding: 8px 8px 8px 0;
+  background-color: #cccccc;
+  position: absolute;
+  width: 585px;
+  z-index: 999;
+  .explorebtn {
+    width: 100px;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    // text-align: center;
+    display: flex;
+  }
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    background-color: white;
+    .icon {
+      width: 40px;
+      height: 20px;
+    }
+    .value {
+      input {
+        border: 0;
+      }
+    }
+  }
+}
+
+.searchreGionMap {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+      height: $height;
+    }
+    .ant-modal-content {
+      width: 585px;
+    }
+    .ant-modal-header {
+      width: 585px;
+      // height: 65px;
+      border-radius: 3px;
+      background-color: #36485e;
+
+      // .ant-modal-title {
+      //   text-align: center;
+      //   font-family: PingFangTC;
+      //   font-size: 16px;
+      //   font-weight: 600;
+      //   font-style: normal;
+      //   font-stretch: normal;
+      //   line-height: normal;
+      //   letter-spacing: normal;
+      //   color: #ffffff;
+      // }
+    }
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+  .searchlist {
+    height: $height;
+    overflow-y: auto;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    .region {
+      width: 100%;
+      background-color: #dae2ed;
+      // position: absolute;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // font-size: 20px;
+
+      button {
+        border: none;
+        outline: none;
+        border-radius: 18px;
+        background: white;
+        padding: 5px;
+      }
+    }
+    .userList {
+      padding: 0 5px;
+      .userItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+        border-bottom: 1px solid #edf0f7;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+.checkIcon {
+  width: 20px;
+}

@@ -1,0 +1,59 @@
+.interestGroup {
+  padding: 10px 10px 100px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.title {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+}
+
+.groupItem {
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.groupAvatar {
+  width: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.groupName {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.followBtn {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    width: 77px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .followed {
+    background-color: #475f77;
+    color: #fff;
+  }
+  .nofollow {
+    background-color: rgb(237, 240, 247);
+    color: #0c293a;
+  }
+}

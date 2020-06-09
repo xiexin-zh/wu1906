@@ -1,0 +1,52 @@
+.RejectCategoryBox {
+  margin: 15px 8px 0 8px;
+  :global {
+    .ant-page-header-heading-title {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 400;
+      font-size: 18px;
+      font-family: PingFangSC-Regular, PingFang SC;
+    }
+    .ant-btn-primary {
+      background: rgba(36, 159, 222, 1);
+    }
+  }
+  main {
+    height: calc(100vh - 165px);
+    margin-top: 8px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fff;
+    :global {
+      .ant-collapse-borderless {
+        background: #fff;
+      }
+      .ant-collapse-header {
+        padding-left: 40px !important;
+        border-bottom: 1px solid #dfe5eb;
+      }
+      .ant-collapse-borderless > .ant-collapse-item {
+        border: none;
+      }
+      .ant-collapse-content-box {
+        padding: 0 16px 0 16px !important;
+      }
+    }
+    .childrenItem {
+      display: flex;
+      justify-content: space-between;
+      height: 54px;
+      padding-left: 25px;
+      line-height: 54px;
+      border-bottom: 1px solid #dfe5eb;
+    }
+    .contentItem {
+      display: inline-block;
+      max-width: 800px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+  }
+}

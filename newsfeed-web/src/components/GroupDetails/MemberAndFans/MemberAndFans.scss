@@ -1,0 +1,55 @@
+.modalContent {
+  max-height: 70vh;
+  overflow-y: auto;
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+    .ant-tabs-nav {
+      width: 100%;
+      & > div {
+        display: flex;
+      }
+    }
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+      .ant-tabs-nav-container,
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        height: 50px;
+      }
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        flex: 1 1;
+        margin-right: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.27px;
+        color: #36485e;
+      }
+      .ant-tabs-tab {
+        background-color: #edf0f7;
+      }
+      .ant-tabs-tab-active {
+        background-color: #dae2ed;
+      }
+    }
+  }
+  &.hideNav {
+    :global {
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+        .ant-tabs-nav-container,
+        .ant-tabs-tab,
+        .ant-tabs-tab-active {
+          height: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.userBox {
+  height: 500px;
+}

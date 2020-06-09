@@ -1,0 +1,6 @@
+.wrapper {
+  flex: 1 1;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  overflow: hidden;
+}

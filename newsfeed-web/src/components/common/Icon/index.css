@@ -1,0 +1,11 @@
+.icons {
+  display: flex;
+  border-radius: 7px;
+  background-color: #edf0f7;
+  padding: 5px;
+  margin-right: 6px;
+}
+
+.icons img {
+  object-fit: contain;
+}

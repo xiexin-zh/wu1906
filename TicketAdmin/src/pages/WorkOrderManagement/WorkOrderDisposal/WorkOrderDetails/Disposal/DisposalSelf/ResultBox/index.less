@@ -1,0 +1,62 @@
+.orderResult {
+  .resultTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .title {
+      font-weight: 500;
+    }
+    .radioTitle {
+      margin-right: 10px;
+    }
+  }
+
+  .resultTitle .selectRadio {
+    display: flex;
+    justify-content: flex-start;
+
+    .title{
+      width: 70px;
+    }
+
+    .content{
+      flex: 1;
+
+      .contentTop{
+        margin: 0 0 10px 0;
+      }
+
+      .contentBottom{
+        display: flex;
+      }
+    }
+
+    .resolveBox {
+      display: flex;
+      padding: 10px 0;
+    }
+  }
+  .resultTitle .selectRadio > div {
+    margin-right: 20px;
+  }
+  .inputText {
+    box-sizing: border-box;
+    padding-left: 80px;
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  .phoneBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    background-color: #249fde;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

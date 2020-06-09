@@ -1,0 +1,298 @@
+.form {
+  /* width: 320px; */
+  /* text-align: center; */
+  /* padding-right: 18px; */
+  /* border-right: 1px solid white; */
+}
+
+.form input {
+  outline: none;
+  border: none;
+}
+
+.username,
+.password {
+  width: 350px;
+  color: #ffffff;
+  text-indent: 20px;
+  background-color: transparent;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.labelUser,
+.labelPassword {
+  position: relative;
+  display: block;
+  width: 350px;
+  height: 60px;
+  background-color: rgba(71, 95, 119, 0.5);
+  border-radius: 10px;
+}
+
+/* .username:focus.username:focus + .user, .password:focus + .pass, .username:valid + .user, .password:valid + .pass{
+  top: 6px;
+  font-size: 12px;
+}
+.username:focus, .password:focus, .username:valid, .password:valid {
+  padding-top: 26px;
+} */
+
+/* Chrome 使用保存 username and password styles */
+/* input 的样式强制修改 */
+.formBox input:-webkit-autofill {
+  padding-top: 26px;
+  box-shadow: 0 0 0px 1000px #3b5369 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* span 模拟的 Placeholder 样式 */
+.formBox input:-webkit-autofill + .user,
+.formBox input:-webkit-autofill + .pass {
+  top: 6px;
+  font-size: 12px;
+}
+
+/* 清除 Chrome 自动保存用户名和密码的默认样式 */
+/* input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #3b5369 inset !important;
+  outline: none !important;
+  border: none !important;
+  padding-bottom: 16px !important;
+  color: #ffffff !important;
+  text-indent: 20px;
+  width: 320px;
+  background-color: transparent;
+  font-size: 16px;
+}  */
+.user,
+.pass {
+  color: #9fa9b6;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  font-size: 16px;
+  cursor: auto;
+  transition: all 0.2s;
+}
+
+.labelPassword {
+  margin: 25px 0 25px 0;
+}
+
+.sub {
+  width: 350px;
+  height: 60px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #36485e;
+  font-weight: bold;
+  /* letter-spacing: 30px; */
+  background: rgba(218, 226, 237, 0.8);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sub:hover {
+  background: rgba(218, 226, 237, 1);
+}
+
+/* 点击登陆切换的图片 */
+.sub_background {
+  /* background: url(assets/images/login/btn-login-pressdown.png) no-repeat !important; */
+}
+
+/* 登录按钮箭头 */
+.submitBox {
+  position: relative;
+}
+
+.login_arrow {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: url(assets/images/login-arrow.png) no-repeat;
+  position: absolute;
+  top: 31%;
+  right: 85px;
+}
+
+/* 忘记密码 */
+.forgetPass span {
+  letter-spacing: 2.4px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.phoneBox {
+  position: relative;
+  text-align: center;
+}
+
+/* 英文样式 */
+.En_phone {
+  width: 100%;
+  text-align: center;
+  background-color: #dae2ed;
+  position: absolute;
+  top: -40px;
+  color: #36485e;
+}
+
+.En_phone::before {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 10px 6px 0px 6px;
+  border-style: solid;
+  border-color: #dae2ed transparent transparent transparent;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* 中文样式 */
+.Zh_phone {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  line-height: 25px;
+  background-color: #dae2ed;
+  background: url(assets/images/info-bubble-contact-it.png) no-repeat center;
+  background-size: 290px 32px;
+  position: absolute;
+  top: -25px;
+  color: #36485e;
+}
+
+/* 二维码 */
+.QRcodeBox {
+  text-align: center;
+}
+
+.QRcode {
+  width: 160px;
+  height: 160px;
+  background: url(assets/images/qrcode.jpg) no-repeat 50%;
+  background-size: 154px 153px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.QRcode_zh {
+  line-height: 160px;
+}
+
+.QRcode_en {
+  padding-top: 35px;
+}
+
+/* 保持登录 */
+.check {
+  vertical-align: middle;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.logging {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+.status {
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.network {
+  display: inline-block;
+  width: 165px;
+  /* letter-spacing: 1px; */
+  color: #9fa9b6;
+}
+
+/* 保持登录title */
+/* 英文样式 */
+.En_chcekTitle {
+  box-sizing: border-box;
+  background-color: #dae2ed;
+  position: absolute;
+  top: -85px;
+  left: 0;
+  text-align: left;
+  color: #36485e;
+  padding: 0 4px 6px 6px;
+}
+
+.En_chcekTitle::before {
+  position: absolute;
+  left: 5%;
+  bottom: -10px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 10px 6px 0px 6px;
+  border-style: solid;
+  border-color: #dae2ed transparent transparent transparent;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* 中文样式 */
+.Zh_chcekTitle {
+  box-sizing: border-box;
+  width: 205px;
+  height: 44px;
+  background: url(assets/images/info-bubble-inactivity.png) no-repeat center;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  text-align: left;
+  color: #36485e;
+  padding: 0 4px 6px 6px;
+}
+
+.clear:after
+
+/* 清楚页面浮动，是为了防止因为浮动造成页面布局的变形 */
+ {
+  clear: both;
+  /* 清除全部样式 */
+  content: '.';
+  display: block;
+  /* 块级元素 */
+  font-size: 0;
+  height: 0;
+  /* 高度为0 */
+  line-height: 0;
+  /* 行高为0 */
+  visibility: hidden;
+  /* 规定元素隐藏 */
+}
+
+/*兼容 IE6，7*/
+.clear {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+  /* 漂浮向右 */
+}
+
+.fr {
+  float: right;
+  /* 漂浮向左 */
+}

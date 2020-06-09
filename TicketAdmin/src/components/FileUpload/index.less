@@ -1,0 +1,44 @@
+.optionsBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+
+  .filebtnUpload,
+  .filebtns {
+    box-sizing: border-box;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    color: #249fde;
+    font-size: 12px;
+    cursor: pointer;
+
+    .btn,
+    span {
+      color: #249fde;
+    }
+  }
+  .filebtns {
+    padding-top: 3px;
+  }
+}
+
+.fileTable {
+  :global {
+    .ant-upload {
+      font-size: 12px;
+    }
+    .ant-table-thead {
+      font-size: 12px;
+    }
+    .ant-table-thead > tr > th {
+      padding: 5px 16px;
+      background-color: #eff9f9;
+    }
+    .ant-table-tbody > tr > td {
+      padding: 10px 16px;
+      font-size: 12px;
+    }
+  }
+}

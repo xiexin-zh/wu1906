@@ -1,0 +1,240 @@
+.addressBox {
+  height: 100%;
+  /* max-height: 100vh; */
+  width: 100%;
+  overflow: hidden;
+  /* overflow-y: auto; */
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingBox {
+  height: 100%;
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.scrollBox {
+  height: 100%;
+  overflow-y: scroll;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.scrollBox {
+  /* max-height: 100%; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  /* 防止遮罩层弹出滚动条不生效 */
+  position: relative;
+  /* padding-bottom: 18px; */
+  z-index: 10;
+}
+
+.scrollBox::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollBox::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px #D8D8D8; */
+  background-color: #ffffff;
+}
+
+.scrollBox::-webkit-scrollbar-thumb {
+  border-radius: 2.5px;
+  background-color: #dae2ed;
+}
+
+.tip {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  border-radius: 0 0 7.5px 7.5px;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  min-width: 228px;
+  height: 58px;
+  padding: 0px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgb(218, 226, 237);
+  z-index: 1000;
+  opacity: 0;
+  -webkit-animation: fadeInOut 2.005s;
+  animation: fadeInOut 2.005s;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #36485e;
+}
+
+@keyframes fadeInOut {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+
+  15% {
+    height: 58px;
+    opacity: 1;
+  }
+
+  85% {
+    height: 58px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.searchIput {
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  line-height: normal;
+  font-size: 14px;
+  text-indent: 30px;
+  color: #a4a4a4;
+  border-radius: 7.5px;
+}
+
+.searchBg {
+  position: relative;
+  padding: 5px 6px;
+  /* background-color: rgba(177, 177, 177, 0.5); */
+  background-color: rgb(218, 226, 237);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.searchImg::before {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  content: '';
+  display: block;
+  /* background: url("assets/images/message/icn-search-search-bar-grey.png") no-repeat center; */
+  background-size: 15px 15px;
+}
+
+.searchIcon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addressPart {
+  background: #ffffff;
+  position: relative;
+}
+
+.addressItem:hover {
+  background-color: #f4f5f5;
+}
+
+.index {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 22px;
+  text-align: left;
+  color: #36485e;
+  background-color: #edf0f7;
+}
+
+.addressItem {
+  height: 42px;
+  margin: 0 4px;
+  /* padding: 0 12px 0 7px; */
+  display: flex;
+  align-items: center;
+}
+
+.addressPart .itemActive {
+  background-color: rgba(177, 177, 177, 0.5);
+}
+
+.checkboxWrapper {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.avatar {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
+  margin-right: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  text-align: center;
+  color: #36485e;
+  background-color: #edf0f7;
+  position: relative;
+}
+
+.avatarImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.fullName {
+  line-height: 40px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #36485e;
+}
+
+.nameAndPosition {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #36485e;
+  overflow: hidden;
+  line-height: 1em;
+  height: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.nameAndPosition > span:nth-of-type(2)::before {
+  content: ' | ';
+}
+
+.noMore {
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #36485e;
+  background-color: #edf0f7;
+}

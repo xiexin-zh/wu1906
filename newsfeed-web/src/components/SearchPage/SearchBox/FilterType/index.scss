@@ -1,0 +1,19 @@
+.filterType {
+  display: flex;
+  padding: 5px 0;
+  // background-color: #59708f;
+  .filterItem {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: white;
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .filterIndex {
+    background-color: #6b84bc;
+    color: white;
+  }
+}

@@ -1,0 +1,98 @@
+.AssessmentUndertakerBox {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  padding: 10px;
+  overflow-y: scroll;
+
+  :global {
+    .ant-table-thead > tr > th {
+      background-color: rgba(36, 159, 222, 0.1);
+    }
+  }
+
+  .checkTitle {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 96px;
+    margin-bottom: 10px;
+    padding: 10px 20px 0 20px;
+    background-color: #fff;
+
+    .title {
+      flex: 1;
+      color: #333;
+      font-size: 18px;
+    }
+    .tabs {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-start;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 100%;
+        margin-right: 45px;
+        color: #666;
+        font-weight: 500;
+        font-size: 18px;
+        list-style: none;
+        border-bottom: 4px solid #fff;
+        cursor: pointer;
+
+        img {
+          width: 15px;
+          height: 18px;
+          margin-right: 5px;
+        }
+
+        &.titleItem {
+          color: #249fde;
+          border-color: #249fde;
+        }
+      }
+    }
+  }
+
+  .checkList {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: #fff;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 48px;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .tableList {
+      flex: 1;
+
+      :global {
+        .ant-table-thead > tr > th {
+          color: #333;
+        }
+      }
+
+      .thImg {
+        width: 18px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.tableFont {
+  color: #333;
+}

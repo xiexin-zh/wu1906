@@ -1,0 +1,269 @@
+.resultReduction {
+  box-sizing: border-box;
+  padding: 30px 20px;
+  font-size: 14px;
+  background-color: #fff;
+
+  .warning {
+    color: #249fde;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  .resultTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .title {
+      font-weight: 500;
+    }
+  }
+
+  .turnStatus {
+    display: flex;
+    height: 120px;
+    margin-top: 20px;
+
+    .title {
+      display: block;
+      width: 70px;
+      font-weight: 400;
+    }
+    .statusProcess {
+      position: relative;
+      display: flex;
+      flex: 1;
+      box-sizing: border-box;
+      padding: 5px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+      .turnProcess {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .dealResult {
+    display: flex;
+    height: 120px;
+    margin-top: 20px;
+
+    .title {
+      display: block;
+      width: 70px;
+      font-weight: 400;
+    }
+
+    .resultBox {
+      flex: 1;
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  }
+
+  .feedback {
+    display: flex;
+    margin-top: 20px;
+
+    .title {
+      display: block;
+      width: 130px;
+      font-weight: 400;
+    }
+
+    .feedbackOption {
+      flex: 1;
+
+      .optionItem {
+        margin-bottom: 20px;
+      }
+      .selectOption {
+        // height: 125px;
+
+        .isResolve {
+          display: flex;
+          margin-bottom: 10px;
+        }
+
+        .replyText{
+          box-sizing: border-box;
+          height: 120px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+
+      .noFeedBack {
+        display: flex;
+        height: 125px;
+
+        span {
+          display: block;
+          width: 90px;
+        }
+
+        .resultBox {
+          flex: 1;
+          box-sizing: border-box;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .upFiles {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+
+    .upTitle {
+      display: block;
+      box-sizing: border-box;
+      width: 70px;
+      padding-top: 10px;
+      font-weight: 400;
+    }
+
+    .fileBox {
+      flex: 1;
+    }
+  }
+
+  .caseReturn {
+    display: flex;
+    margin-top: 20px;
+
+    .title {
+      font-weight: 500;
+    }
+  }
+
+  .returnResult {
+    display: flex;
+    margin-top: 20px;
+
+    .title {
+      width: 70px;
+    }
+
+    .returnSelect {
+      flex: 1;
+
+      .selectItem {
+        margin-bottom: 20px;
+      }
+
+      .optionItem {
+        .isResolve {
+          display: flex;
+          margin-bottom: 10px;
+        }
+      }
+
+      .returnNote {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding-top: 10px;
+
+        .callPhone {
+          position: absolute;
+          top: -30px;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 30px;
+          background-color: #249fde;
+          border-radius: 5px;
+          cursor: pointer;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .title {
+          display: block;
+          width: 70px;
+        }
+
+        .title1 {
+          display: block;
+          width: 90px;
+        }
+
+        textarea {
+          flex: 1;
+          box-sizing: border-box;
+          height: 120px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          outline: none;
+          resize: none;
+        }
+      }
+    }
+  }
+
+  .checkResult {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+
+    .title {
+      width: 70px;
+    }
+    .checkSelect {
+      flex: 1;
+
+      .notice {
+        padding: 10px 0;
+      }
+
+      .resultBox {
+        display: flex;
+        width: 100%;
+
+        textarea {
+          flex: 1;
+          box-sizing: border-box;
+          height: 120px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          outline: none;
+          resize: none;
+        }
+      }
+    }
+  }
+
+  .submit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    margin-top: 20px;
+
+    button {
+      color: #fff;
+      background-color: #249fde;
+    }
+  }
+}

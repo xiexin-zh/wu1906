@@ -1,0 +1,118 @@
+.wrapper {
+  min-height: 380px;
+  max-height: 600px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.title {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(54, 72, 94);
+  margin: 0.5em 0;
+}
+.groupWrapper {
+  padding: 0 4px;
+}
+
+.followMore {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  color: #36485e;
+  background-color: #edf0f7;
+}
+.createpost {
+  z-index: -100;
+  :global {
+    .ant-modal-content {
+      width: 585px;
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-btn-primary {
+      width: 77px;
+      height: 40px;
+      background-color: #edf0f7;
+      border: none;
+    }
+
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+    .ant-modal-close-x {
+      color: white;
+    }
+
+    .ant-tabs-nav {
+      width: 100%;
+      & > div {
+        display: flex;
+      }
+    }
+    .ant-tabs-bar {
+      margin-bottom: 0;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar {
+      .ant-tabs-nav-container,
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        height: 50px;
+      }
+      .ant-tabs-tab,
+      .ant-tabs-tab-active {
+        flex: 1 1;
+        margin-right: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.27px;
+        color: #36485e;
+      }
+      .ant-tabs-tab {
+        background-color: #edf0f7;
+      }
+      .ant-tabs-tab-active {
+        background-color: #dae2ed;
+      }
+    }
+  }
+}
+
+.groupAndUser {
+  overflow-y: auto;
+}
+
+.scrollBox,
+.groupAndUser {
+  height: 400px;
+  // height: 60vh;
+}
+
+.resultCount {
+  padding: 0 7px;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 0;
+}

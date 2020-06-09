@@ -1,0 +1,43 @@
+.addMark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .mark {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+
+    .content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+      padding: 5px 8px;
+      overflow: hidden;
+      font-size: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+      img {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 13px;
+        height: 13px;
+      }
+    }
+
+    .reduce {
+      color: red;
+    }
+  }
+
+  button {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #249fde;
+  }
+}

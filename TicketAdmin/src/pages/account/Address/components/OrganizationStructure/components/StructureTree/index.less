@@ -1,0 +1,62 @@
+.StructureTreeBox {
+  width: 260px;
+  margin-right: 20px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 260px;
+    height: 56px;
+    margin-bottom: 20px;
+    padding: 0 24px 0 30px;
+    color: rgba(36, 159, 222, 1);
+    font-size: 16px;
+    background: rgba(233, 245, 252, 1);
+    border-radius: 4px 4px 0 0;
+  }
+  .example {
+    margin: 20px 0;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .tree {
+    height: calc(100vh - 300px);
+    padding-left: 24px;
+    overflow-y: auto;
+    :global {
+      .ant-tree-switcher-icon {
+        color: rgba(36, 159, 222, 1);
+        font-size: 22px !important;
+      }
+      ul {
+        margin-left: 12px !important;
+        padding: 0 !important;
+        border-left: 1px solid rgb(233, 245, 252);
+      }
+      .ant-tree-title {
+        display: flex;
+      }
+    }
+  }
+  .treeTitleIcon {
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    margin-left: 10px;
+    padding-top: 0;
+  }
+  .addIcon {
+    background: url('../../../../images/add.png') no-repeat center;
+  }
+  .editIcon {
+    background: url('../../../../images/edit.png') no-repeat center;
+  }
+  .deleteIcon {
+    background: url('../../../../images/delete.png') no-repeat center;
+  }
+}

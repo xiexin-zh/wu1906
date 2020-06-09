@@ -1,0 +1,327 @@
+.wechatBox {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+.wechatImg {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  /* display: inline-block; */
+  display: list-item;
+  font-size: 0;
+  vertical-align: middle;
+}
+.emoji {
+  color: transparent;
+  display: inline-block;
+  /* display: list-item; */
+  font-size: 0;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  background-image: url('./css_sprites.png');
+  background-size: 1000%;
+}
+.emoji-Smile {
+  background-position: -20px -0;
+}
+.emoji-Grimace {
+  background-position: -140px -20px;
+}
+.emoji-Drool {
+  background-position: -0 -20px;
+}
+.emoji-Scowl {
+  background-position: -20px -20px;
+}
+.emoji-CoolGuy {
+  background-position: -40px -0;
+}
+.emoji-Sob {
+  background-position: -40px -20px;
+}
+.emoji-Shy {
+  background-position: -0 -40px;
+}
+.emoji-Sleep {
+  background-position: -20px -40px;
+}
+.emoji-Silent {
+  background-position: -40px -40px;
+}
+.emoji-Cry {
+  background-position: -60px -0;
+}
+.emoji-Awkward {
+  background-position: -60px -20px;
+}
+.emoji-Angry {
+  background-position: -60px -40px;
+}
+.emoji-Tongue {
+  background-position: -0 -60px;
+}
+.emoji-Grin {
+  background-position: -20px -60px;
+}
+.emoji-Surprise {
+  background-position: -40px -60px;
+}
+.emoji-Frown {
+  background-position: -60px -60px;
+}
+.emoji-Ruthless {
+  background-position: -80px -0;
+}
+.emoji-Blush {
+  background-position: -80px -20px;
+}
+.emoji-Puke {
+  background-position: -80px -40px;
+}
+.emoji-Scream {
+  background-position: -80px -60px;
+}
+.emoji-Slight {
+  background-position: -0 -80px;
+}
+.emoji-Joyful {
+  background-position: -20px -80px;
+}
+.emoji-Chuckle {
+  background-position: -40px -80px;
+}
+.emoji-Smug {
+  background-position: -60px -80px;
+}
+.emoji-Hungry {
+  background-position: -80px -80px;
+}
+.emoji-Drowsy {
+  background-position: -100px -0;
+}
+.emoji-Sweat {
+  background-position: -100px -20px;
+}
+.emoji-Panic {
+  background-position: -100px -40px;
+}
+.emoji-Determined {
+  background-position: -100px -60px;
+}
+.emoji-Laugh {
+  background-position: -100px -80px;
+}
+.emoji-Commando {
+  background-position: -0 -100px;
+}
+.emoji-Shocked {
+  background-position: -20px -100px;
+}
+.emoji-Scold {
+  background-position: -40px -100px;
+}
+.emoji-Shhh {
+  background-position: -60px -100px;
+}
+.emoji-Dizzy {
+  background-position: -80px -100px;
+}
+.emoji-Tormented {
+  background-position: -100px -100px;
+}
+.emoji-Toasted {
+  background-position: -120px -0;
+}
+.emoji-Skull {
+  background-position: -120px -20px;
+}
+.emoji-Hammer {
+  background-position: -120px -40px;
+}
+.emoji-Speechless {
+  background-position: -120px -60px;
+}
+.emoji-Wave {
+  background-position: -120px -80px;
+}
+.emoji-NosePick {
+  background-position: -120px -100px;
+}
+.emoji-Clap {
+  background-position: -0 -120px;
+}
+.emoji-Shame {
+  background-position: -20px -120px;
+}
+.emoji-Trick {
+  background-position: -40px -120px;
+}
+.emoji-Bah！L {
+  background-position: -60px -120px;
+}
+.emoji-Yawn {
+  background-position: -80px -120px;
+}
+.emoji-Bah！R {
+  background-position: -100px -120px;
+}
+.emoji-Shrunken {
+  background-position: -120px -120px;
+}
+.emoji-TearingUp {
+  background-position: -140px -0;
+}
+.emoji-Pooh-pooh {
+  background-position: -0 -0;
+}
+.emoji-Sly {
+  background-position: -140px -40px;
+}
+.emoji-Kiss {
+  background-position: -140px -60px;
+}
+.emoji-Wrath {
+  background-position: -140px -80px;
+}
+.emoji-Cleaver {
+  background-position: -140px -100px;
+}
+.emoji-Whimper {
+  background-position: -140px -120px;
+}
+.emoji-Watermelon {
+  background-position: -0 -140px;
+}
+.emoji-Beer {
+  background-position: -20px -140px;
+}
+.emoji-Coffee {
+  background-position: -40px -140px;
+}
+.emoji-Basketball {
+  background-position: -60px -140px;
+}
+.emoji-PingPong {
+  background-position: -80px -140px;
+}
+.emoji-Rice {
+  background-position: -100px -140px;
+}
+.emoji-Pig {
+  background-position: -120px -140px;
+}
+.emoji-Lips {
+  background-position: -140px -140px;
+}
+.emoji-Heart {
+  background-position: -160px -0;
+}
+.emoji-BrokenHeart {
+  background-position: -160px -20px;
+}
+.emoji-Bomb {
+  background-position: -160px -40px;
+}
+.emoji-Rose {
+  background-position: -160px -60px;
+}
+.emoji-Wilt {
+  background-position: -160px -80px;
+}
+.emoji-Lightning {
+  background-position: -160px -100px;
+}
+.emoji-Dagger {
+  background-position: -160px -120px;
+}
+.emoji-Soccer {
+  background-position: -160px -140px;
+}
+.emoji-Cake {
+  background-position: -0 -160px;
+}
+.emoji-Poop {
+  background-position: -20px -160px;
+}
+.emoji-Moon {
+  background-position: -40px -160px;
+}
+.emoji-Ladybug {
+  background-position: -60px -160px;
+}
+.emoji-Gift {
+  background-position: -80px -160px;
+}
+.emoji-Sun {
+  background-position: -100px -160px;
+}
+.emoji-Hug {
+  background-position: -120px -160px;
+}
+.emoji-ThumbsUp {
+  background-position: -140px -160px;
+}
+.emoji-ThumbsDown {
+  background-position: -160px -160px;
+}
+.emoji-Shake {
+  background-position: -180px -0;
+}
+.emoji-Fight {
+  background-position: -180px -20px;
+}
+.emoji-Peace {
+  background-position: -180px -40px;
+}
+.emoji-Fist {
+  background-position: -180px -60px;
+}
+.emoji-Beckon {
+  background-position: -180px -80px;
+}
+.emoji-Pinky {
+  background-position: -180px -100px;
+}
+.emoji-Nuh-uh {
+  background-position: -180px -120px;
+}
+.emoji-OK {
+  background-position: -180px -140px;
+}
+.emoji-RockOn {
+  background-position: -180px -160px;
+}
+.emoji-Tremble {
+  background-position: -0 -180px;
+}
+.emoji-Waddle {
+  background-position: -20px -180px;
+}
+.emoji-InLove {
+  background-position: -40px -180px;
+}
+.emoji-Aaagh {
+  background-position: -60px -180px;
+}
+.emoji-Blowkiss {
+  background-position: -80px -180px;
+}
+.emoji-Twirl {
+  background-position: -100px -180px;
+}
+.emoji-Kotow {
+  background-position: -120px -180px;
+}
+.emoji-Dramatic {
+  background-position: -140px -180px;
+}
+.emoji-Surrender {
+  background-position: -160px -180px;
+}
+.emoji-JumpRope {
+  background-position: -180px -180px;
+}

@@ -1,0 +1,46 @@
+.wordorderDeatils {
+  height: calc(100vh - 64px);
+  // overflow-y: scroll;
+  // height: 100vh;
+  overflow: hidden;
+
+  .details_header {
+    background-color: #f0f2f5;
+
+    :global {
+      .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+        border: 0;
+        border-radius: 0;
+      }
+
+      .ant-tabs-bar {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 10px;
+        border: 0;
+      }
+    }
+    .headTab {
+      margin-top: 10px;
+
+      :global {
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+          color: #2d3557;
+          font-weight: 400;
+          font-size: 16px;
+          background: #f0f2f5;
+          
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab:first-child i {
+          display: none;
+        }
+        .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+          color: #249fde;
+          background: #fff;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+    }
+  }
+}

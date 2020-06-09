@@ -1,0 +1,130 @@
+@import '~antd/es/style/themes/default.less';
+
+.LoginBox {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .footer {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-align: center;
+    .logo::before {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      vertical-align: middle;
+      background: url('/login_images/logo1.jpg') no-repeat;
+      background-size: 100%;
+      content: '';
+    }
+  }
+}
+.main {
+  display: flex;
+  box-sizing: border-box;
+  width: 800px;
+  height: 400px;
+  margin-bottom: 46px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 47px 0 rgba(0, 129, 221, 0.15);
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+  .login_logo4 {
+    display: block;
+    width: 535px;
+    background: url('/login_images/login_logo4.png') no-repeat;
+    background-size: cover;
+  }
+  .loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .formBox {
+      width: 300px;
+      .inputBox {
+        display: flex;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-bottom: 40px;
+        color: rgba(0, 165, 240, 1);
+        font-weight: 500;
+        font-size: 36px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        text-align: center;
+      }
+      .inputIcon {
+        width: 30px;
+        height: 30px;
+      }
+      .userInputIcon {
+        background: url('/login_images/user.png') no-repeat;
+        background-position: center center;
+        background-size: 100%;
+      }
+      .passInputIcon {
+        background: url('/login_images/pass.png') no-repeat;
+        background-position: center center;
+        background-size: 100%;
+      }
+      .checkedBox {
+        margin: 20px 0;
+      }
+      .priBtn {
+        height: 54px;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        font-size: 24px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        background: rgba(0, 172, 236, 1);
+        border-radius: 7px;
+      }
+    }
+  }
+  :global {
+    .ant-input,
+    .ant-input:focus {
+      padding: 0 0 0 40px;
+      border: none;
+      box-shadow: none;
+    }
+    .antd-pro-login-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+    .ant-checkbox-wrapper {
+      span {
+        color: rgba(0, 165, 240, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  background: @layout-body-background;
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 32px 0;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-color: #fff;
+    .topLeftImg {
+      position: relative;
+      .topLeftCorner {
+        position: absolute;
+        margin-top: 23px;
+        margin-left: 54px;
+        color: #fff;
+        text-align: center;
+        .loginTop2Title {
+          font-weight: bold;
+          font-size: 36px;
+          letter-spacing: 6.05px;
+        }
+        .topLeftCornerLine {
+          display: flex;
+          align-items: center;
+          .line {
+            display: inline-block;
+            width: 85px;
+            height: 2px;
+          }
+          .leftLine {
+            background: linear-gradient(
+              270deg,
+              rgba(255, 255, 255, 1) 0%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+          .rightLine {
+            background: linear-gradient(
+              27deg,
+              rgba(255, 255, 255, 1) 0%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+          span {
+            margin: 0 4px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .bottomRightImg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .content {
+    padding: 32px 0 24px;
+  }
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.desc {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: @text-color-secondary;
+  font-size: @font-size-base;
+}

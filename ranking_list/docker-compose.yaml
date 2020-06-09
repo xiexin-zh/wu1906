@@ -1,0 +1,10 @@
+---
+version: '3.2'
+services:
+  seein_api:
+    image: ranking_list_web:latest
+    container_name: ranking_list_web
+    hostname: ranking_list_web
+    restart: always
+    ports:
+      - "3003:8000"

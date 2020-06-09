@@ -1,0 +1,44 @@
+.disposal {
+  box-sizing: border-box;
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+
+  .disposal_tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+
+    .tabLeft {
+      display: flex;
+      justify-content: flex-start;
+      // padding: 0 10px;
+      box-sizing: border-box;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-right: 10px;
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      li.active {
+        color: #249fde;
+        border-bottom: 2px solid #249fde;
+      }
+    }
+
+    .tabRight {
+      button {
+        color: #249fde;
+        background-color: #fff;
+        border: 0;
+        outline: none;
+      }
+    }
+  }
+}

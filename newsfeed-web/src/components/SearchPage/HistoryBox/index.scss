@@ -1,0 +1,151 @@
+.searchHistory {
+  padding-bottom: 100px;
+}
+.searchHistory > div {
+  background-color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.title {
+  height: 40px;
+}
+.title .tip {
+  font-weight: bolder;
+}
+.searchHistory > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchHistory {
+  .clear {
+    color: rgb(67, 67, 233);
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+.searchHistory .historyList {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.historyItem {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.itemImg {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.itemTitle {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.itemClose {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchHistory .interestGroup {
+  margin-bottom: 20px;
+}
+
+.groupList {
+  display: flex;
+  // overflow: hidden;
+  text-align: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+
+  a {
+    color: black;
+    width: 110px;
+    // margin: auto;
+    margin-right: 5px;
+  }
+  a:last-child {
+    margin-right: 0;
+  }
+  div {
+    border-radius: 0;
+    margin-right: 10px;
+  }
+  .groupName {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.searchHistory .userList {
+  display: block;
+}
+
+.userItem {
+  height: 50px;
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.userAvatar {
+  width: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.userName {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+  .givenName {
+    margin-right: 10px;
+  }
+}
+
+.followBtn {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    width: 77px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .followed {
+    background-color: #475f77;
+    color: #fff;
+  }
+  .nofollow {
+    background-color: rgb(237, 240, 247);
+    color: #0c293a;
+  }
+}

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+## ./create-image sunface/crm
+
+rm -rf docker/dist
+npm install && npm run build
+mv dist docker/dist
+docker build -t $1 docker

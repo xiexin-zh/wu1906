@@ -1,0 +1,195 @@
+.liveChart {
+  width: 100%;
+  /* padding: 0 20px 10px; */
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+.liveChart .startButton {
+  margin: 0 auto;
+}
+.liveChart h1 {
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+.liveChart .chart {
+  position: relative;
+  /* margin: 20px auto; */
+}
+
+.liveChart .chart .dotted {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  border: 2px dashed red;
+  border-radius: 10px;
+  transition: all 2s linear;
+}
+
+.liveChart .baseline {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  z-index: 2;
+  background: #555;
+}
+.liveChart .baseline span {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  transform: translateX(-50%);
+  font-style: italic;
+}
+.liveChart .chartBars {
+  position: relative;
+  width: 100%;
+}
+.liveChart .chartBars.withBaseline .barWrapper {
+  left: 0;
+  padding-left: 50%;
+}
+.liveChart .chartBars.withBaseline .barWrapper label {
+  right: 50%;
+  width: auto;
+}
+.liveChart .chartBars .barWrapper label .avatar {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.liveChart .chartBars.withBaseline .barWrapper.behindBaseline {
+  left: auto;
+  right: 0;
+  padding-left: 0;
+  padding-right: 50%;
+  flex-direction: row-reverse;
+}
+.liveChart .chartBars.withBaseline .barWrapper.behindBaseline label {
+  right: auto;
+  left: 50%;
+  text-align: left;
+  flex-direction: row-reverse;
+}
+.liveChart .chartBars.withBaseline .barWrapper.behindBaseline label img {
+  margin-left: 5px;
+}
+.liveChart .chartBars.withBaseline .barWrapper.behindBaseline .value {
+  right: 100%;
+  left: auto;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.liveChart .barWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s linear;
+  padding-left: 200px;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.liveChart .barWrapper label {
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  left: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.liveChart .barWrapper label img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 10px;
+}
+.liveChart .barWrapper .value {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.liveChart .barWrapper .bar {
+  width: 0%;
+  transition: width .5s linear;
+}
+
+.liveChart .barWrapper .flame {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  /* background-color: rgb(226, 224, 224); */
+  background-color: #fff;
+  border-radius: 15%;
+  background:OrangeRed;
+  box-shadow: 0px 0px 5px 4px OrangeRed;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.liveChart .barWrapper .barBack {
+  /* width: 85%; */
+  flex: 1;
+  display: flex;
+  background: linear-gradient(0.25turn, green, yellow, red);
+}
+
+.liveChart .barWrapper .barBack .remain {
+  flex: 1;
+  background-color: #fff;
+}
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1deg) scaleY(1.14);
+  }
+  80% {
+    transform: rotate(-2deg) scaleY(0.92);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}

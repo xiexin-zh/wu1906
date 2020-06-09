@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 40px;
+}
+
+.memberBox {
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: calc(100vh - 169px);
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  :global {
+    .ant-avatar-string {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.btn {
+  width: 77px;
+  height: 30px;
+  // border-radius: 15px;
+  background-color: #edf0f7;
+}

@@ -1,0 +1,274 @@
+.createpost {
+  // font-weight: bolder;
+  // color: black;
+  font-size: 15px;
+
+  :global {
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-btn-primary {
+      width: 77px;
+      height: 40px;
+      background-color: #edf0f7;
+      border: none;
+
+      span {
+        font-family: PingFangTC;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0c293a;
+      }
+    }
+
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+
+    .ant-input {
+      outline: none;
+      border-style: none;
+      overflow: hidden;
+    }
+
+    .ant-select {
+      margin-right: 9px;
+    }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+    .ant-upload-list-picture-card .ant-upload-list-item {
+      overflow: hidden;
+    }
+  }
+}
+
+.userinfo {
+  display: flex;
+
+  align-items: center;
+  padding: 18px 14px;
+
+  .userimg {
+    margin-right: 27px;
+  }
+}
+
+.avatarName {
+  font-size: 16px;
+  text-align: center;
+  color: #0c293a;
+  text-align: left;
+  word-break: break-word;
+}
+
+// .avatarName span:nth-of-type(2)::before {
+//   content: ' | ';
+// }
+
+.imglist {
+  padding-left: 14px;
+  :global(.ant-upload-list-item-info > span) {
+    height: 100%;
+  }
+
+  :global(.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img) {
+    object-fit: cover;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.previewModal {
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .previewImage {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+  }
+}
+
+.icon {
+  display: flex;
+  border-top: solid 1px #dae2ed;
+  // border-bottom: solid 1px #dae2ed;
+  padding: 10px 15px;
+  align-items: center;
+  .addtext {
+    margin-right: 36px;
+  }
+  .mouseHover {
+    cursor: pointer;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .mouseHover :hover > span {
+    font-weight: 800;
+    color: #0c293a;
+  }
+
+  .voteIcon span {
+    color: #ccc;
+  }
+
+  :global {
+    .ant-upload {
+      cursor: pointer;
+      font-weight: 400;
+    }
+  }
+
+  .uploadIcon {
+    :global {
+      .ant-upload :hover {
+        color: #0c293a;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .uploadIconShare {
+    :global {
+      .ant-upload {
+        cursor: auto;
+        color: #ccc;
+      }
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  border-radius: 7px;
+  background-color: #edf0f7;
+  padding: 5px;
+  margin-right: 6px;
+}
+
+.disable {
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+.TextArea {
+  position: relative;
+  font-size: 16px;
+  :before {
+    content: attr(placeholder);
+    color: #a4a4a4;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.show {
+  :before {
+    content: none;
+  }
+}
+.textContent {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.mentionBtn {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-color: #e7ecf2;
+}
+
+.showList {
+  width: 230px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1111;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
+.selectList {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.listItem {
+  display: flex;
+  height: 40px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.listItem > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.itemAvatar {
+  width: 50px;
+}
+
+.itemName {
+  flex: 1;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.listItem .itemIcon {
+  width: 30px;
+  justify-content: flex-end;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}

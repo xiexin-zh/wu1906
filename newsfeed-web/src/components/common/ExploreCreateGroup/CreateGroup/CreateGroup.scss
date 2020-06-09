@@ -1,0 +1,163 @@
+$width_1: 100%;
+
+$height_1: 50px;
+$height_2: 46px;
+
+.styles_BG {
+  width: $width_1;
+  background-color: #ffffff;
+}
+
+.createGroupBox {
+  height: 420px;
+  background-color: #d9dad5;
+  p {
+    margin: 0;
+  }
+  .create {
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+    button {
+      background-color: #475f77;
+      color: #fff;
+      width: 150px;
+      height: 45px;
+      border: 0;
+    }
+  }
+}
+.groupNameInput {
+  height: $height_1;
+  padding-left: 19px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0c293a;
+}
+.groupHeadPortrait {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $height_2;
+  padding: 0 19px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #545454;
+  position: relative;
+
+  .camera {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/group-3.svg');
+  }
+  .groupHeadFile {
+    width: $width_1;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+  }
+}
+
+.privacySettingsBoxs {
+  padding-top: 19px;
+  .settingFont {
+    height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #0c293a;
+    padding-left: 19px;
+  }
+
+  .selectSetting {
+    width: $width_1;
+    height: 53px;
+    background-color: #fff;
+    padding: 0 17px 0 23px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #545454;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .Icon::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: text-bottom;
+      margin-right: 19px;
+    }
+    .publicIcon::before {
+      background: url('../images/everyone@3x.png');
+      background-size: 16px 16px;
+    }
+    .secretIcon::before {
+      background: url('../images/group3@3x.png');
+      background-size: 16px 16px;
+    }
+    .addMembers::before {
+      background: url('../images/icnAddToFollow@3x.png');
+      background-size: 16px 16px;
+    }
+    .checkIcon::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 13px;
+      background: url('../images/icn-tick-select-blue.svg');
+      background-size: 16px 13px;
+    }
+  }
+  .dividerBox {
+    background-color: #fff;
+    padding: 0 3.2px 0 2.8px;
+  }
+}
+.divider {
+  border: solid 1px #dae2ed;
+}
+.arrow {
+  display: flex;
+
+  .arrowIcon::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background: url('../images/icn-list-next-grey.svg');
+    background-size: 10px 16px;
+    vertical-align: text-bottom;
+  }
+  .memberNum {
+    font-size: 14px;
+    font-weight: 600;
+    color: #49443d;
+    margin-right: 17.5px;
+  }
+  .showHead {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 17.5px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+  }
+}
+
+.showHeadImg {
+  :global {
+    .ant-modal-close-x {
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+    }
+  }
+}

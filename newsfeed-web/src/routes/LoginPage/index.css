@@ -1,0 +1,39 @@
+/* 大背景 */
+.Login {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #36485e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 中间内容 */
+.LoginBox {
+  min-width: 516px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 太阳城logo */
+.sunhorizontal {
+  width: 516px;
+  height: 119px;
+  margin-bottom: 37px;
+}
+
+/* 资料错误 */
+.LoginError {
+  font-size: 18px;
+  color: #ff4c47;
+  /* margin-left: 122px; */
+  padding: 54px 100px 0;
+  box-sizing: border-box;
+  /* max-width: 510px; */
+}

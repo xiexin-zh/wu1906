@@ -1,0 +1,7 @@
+#!/bin/sh
+
+## ./create-image sunpeople/api
+rm -rf docker/dist
+npm install && npm run build
+mv dist docker/dist
+docker build -t $1 docker

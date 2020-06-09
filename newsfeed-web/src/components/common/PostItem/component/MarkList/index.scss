@@ -1,0 +1,56 @@
+.MarkList {
+  :global {
+    // .modal-wrapper {
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+      height: 300px;
+      overflow-y: auto;
+    }
+
+    .ant-btn-primary {
+      width: 77px;
+      height: 40px;
+      background-color: #edf0f7;
+      border: none;
+    }
+
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+}
+
+.memberList {
+  padding: 5px;
+  border-bottom: 1px solid #edf0f7;
+  cursor: pointer;
+}
+
+.givenName,
+.fullName,
+.title {
+  margin-left: 5px;
+}

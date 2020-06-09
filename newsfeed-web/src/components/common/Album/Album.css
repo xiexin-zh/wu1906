@@ -1,0 +1,60 @@
+.AlbumBox {
+  display: flex;
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.albumImgsBox {
+  position: relative;
+}
+.albumImg {
+  width: 126px;
+  height: 126px;
+  border-radius: 7px;
+}
+.albumTitle {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 1;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 600;
+  border-radius: 7px;
+  z-index: 11;
+}
+.albumNum {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 600;
+  border-radius: 7px;
+  z-index: 10;
+}
+.imgShadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  border-radius: 7px;
+}
+.imgShadow img {
+  width: 30%;
+  height: 30%;
+}

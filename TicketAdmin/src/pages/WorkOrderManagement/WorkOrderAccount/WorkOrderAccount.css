@@ -1,0 +1,356 @@
+.WorkOrderAccountBox {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: calc(100vh - 65px);
+  padding: 16px 10px 10px 10px;
+  overflow-y: scroll;
+  font-size: 14px;
+  background-color: #ebf3f6;
+}
+
+.WorkOrderAccountBox :global .ant-table-thead > tr > th{
+  color: #333;
+  font-weight: 400;
+  background: rgba(36,159,222,0.1);
+}
+.WorkOrderAccountBox :global .ant-select-selection-selected-value{
+  color: #333;
+}
+
+.WorkOrderAccountBox :global .ant-radio-wrapper{
+  color: #333;
+}
+
+.statusTab {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* .statusTab .tabTop {
+  height: 50px;
+  display: flex;
+} */
+
+.statusTab .workTitle {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.statusTab .tabMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.statusTab .tabMenu .tabItems {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.statusTab .tabMenu .tabItems li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 40px;
+  margin-right: 50px;
+  color: #666;
+  font-size: 16px;
+  list-style: none;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+.statusTab .tabMenu .tabItems li img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.statusTab .tabMenu .tabItems li.activeTab {
+  color: #249fde;
+  border-color: #249fde;
+}
+
+.statusTab .tabMenu .createWork {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.statusTab .tabMenu .createWork > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.statusTab .tabMenu .search_all input {
+  margin-left: 5px;
+  border: none;
+  outline: none;
+}
+
+.statusTab .tabMenu .importBtn {
+  color: #249fde;
+  border-color: #249fde;
+  cursor: pointer;
+}
+
+.statusTab .tabMenu .importWork {
+  margin-left: 5px;
+}
+.statusTab .tabMenu .createBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #249fde;
+  cursor: pointer;
+}
+
+.statusTab .tabMenu .createBtn .createText {
+  margin-left: 5px;
+}
+
+.workSearch {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 145px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.workSearch .workSearchTop {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  /* position: relative; */
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.workSearch .workSearchTop .createTime {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* margin-right: 50px; */
+}
+.workSearch .workSearchTop .createTime .timeTitle {
+  display: block;
+  color: #666;
+}
+
+.workSearch .workSearchTop .timeOut {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.workSearch .workSearchTop .willTimeOut {
+  margin-right: 15px;
+  color: #f7b500;
+}
+.workSearch .workSearchTop .hasTimeOut {
+  color: #e02020;
+}
+
+.createTimeBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+  padding-right: 25px;
+}
+
+.workSearch .workSearchTop .startSearch {
+  /* position: absolute;
+  height: 40px;
+  top: 50%;
+  right: 0;
+  margin-top: -20px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.workSearch .workSearchTop .startSearch > span {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 26px;
+  margin-right: 5px;
+  padding: 0 7px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #249fde;
+  border-radius: 3px;
+}
+.workSearch .workSearchTop .startSearch > span:first-child {
+  background-color: #249fde;
+}
+.workSearch .workSearchTop .startSearch > span.reset {
+  color: #249fde;
+}
+.workSearch .workSearchTop .startSearch .superSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5px;
+  color: #249fde;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.workSearch .workSearchBottom {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.selectOption :global .ant-select-selection--single {
+  height: 28px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.workSearch .workSearchBottom .fontStyle :global .ant-radio-wrapper {
+  color: #666;
+  font-size: 14px;
+}
+
+.workSearch .addBtn {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #249fde;
+}
+
+.workList {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px 20px 0;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.workList .orderTable{
+  flex: 1;
+}
+.workList .listFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 60px;
+  padding-left: 20px;
+  color: #333;
+  border-top: 1px solid #cfcfcf;
+}
+
+.workList .listFooter .footerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.workList .listFooter .footerLeft .checkBox {
+  color: #333;
+  font-size: 14px;
+}
+
+.workList .listFooter .footerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.workList .listFooter .footerRight .footerSpace {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.workList .listFooter .footerRight .toEndStart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  margin-right: 10px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exportBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.exportBtns .footerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  margin-left: 10px;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #249fde;
+  border-radius: 5px;
+}
+.workSearchTop .createTime .datePicker {
+  width: 120px;
+}
+.workSearchTop .createTime .rangePicker {
+  width: 210px;
+}
+.workSearchTop .createTime .datePicker :global .ant-calendar-picker-input {
+  font-size: 12px;
+}
+.workSearchTop .createTime .rangePicker :global .ant-calendar-picker-input {
+  font-size: 10px;
+}
+.workSearchBottom :global .ant-select-selection--single .ant-select-selection__rendered {
+  margin-right: 0;
+  line-height: 26px;
+}
+.WorkOrderDisposalBox :global .ant-select-selection--single .ant-select-selection__rendered {
+  margin-right: 0;
+}
+
+.hover {
+  cursor: pointer;
+}

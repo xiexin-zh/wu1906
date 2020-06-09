@@ -1,0 +1,65 @@
+.wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.remove {
+  :global {
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+      height: 500px;
+    }
+
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+}
+.removeList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #edf0f7;
+}
+.removeItem {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.rec {
+  width: 20px;
+  height: 20px;
+}
+
+.name {
+  margin-left: 8px;
+  width: 450px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

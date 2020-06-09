@@ -1,0 +1,213 @@
+.listBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
+}
+.listTop {
+  // height: 320px;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.ppTitle {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ppTitle img {
+  width: 320px;
+  height: 45px;
+}
+.topMain {
+  // height:180px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.topMain .line {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.topMain .line img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  width: 100%;
+}
+.topBox {
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+
+.topOne,
+.topTwo,
+.topThree {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+}
+.topOne {
+  z-index: 3;
+  top: 85px;
+  right: 30px;
+}
+.topTwo {
+  z-index: 2;
+  left: -150px;
+  top: 120px;
+}
+.topThree {
+  z-index: 2;
+  right: -50px;
+  top: 160px;
+}
+
+.ppAvatar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80px;
+  top: -111px;
+  left: 40px;
+}
+.ppAvatar .userValue {
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  background: linear-gradient(to bottom, yellow, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.ppAvatar .avatarBox {
+  position: relative;
+}
+.ppAvatar .userBg {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+.ppAvatar .userBg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ppAvatar .userBg .userShyLeft,
+.ppAvatar .userBg .userShyRight {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  top: 50%;
+  // transform: translateY(-50%);
+}
+.ppAvatar .userBg .userShyLeft{
+  left: 0px;
+}
+.ppAvatar .userBg .userShyRight{
+  right: 0px;
+}
+
+.ppAvatar .userlabel {
+  color: #fff;
+  font-size: 18px;
+}
+
+.ppAvatar .ppBg {
+  width: 70px;
+  height: 70px;
+}
+
+.rank {
+  width: 150px;
+}
+
+.rank img {
+  width: 100%;
+  height: 100%;
+}
+.lineBox {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -15px;
+  z-index: 11;
+  overflow: hidden;
+}
+.lineLeft {
+  width: 100%;
+  position: relative;
+  // left: 15px;
+  transform: rotate(15deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+.lineRight {
+  width: 100%;
+  position: relative;
+  // right: 15px;
+  transform: rotate(-15deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+.lineLeft img {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  z-index: 10;
+  transform: rotate(-10deg);
+}
+.lineRight img {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  z-index: 10;
+  transform: rotate(10deg);
+}
+
+.listOther {
+  flex: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // background-color: rgba(255, 255, 255, 0.8);
+}
+.spaceBlock {
+  height: 10px;
+  // background-color: rgba(255, 255, 255, 0.8);
+  z-index: 20;
+}
+.userList {
+  flex: 1;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  z-index: 15;
+  background-color: rgba(255, 255, 255, 0.8);
+}

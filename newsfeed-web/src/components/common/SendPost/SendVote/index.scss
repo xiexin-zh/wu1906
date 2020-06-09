@@ -1,0 +1,252 @@
+input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.sendvote {
+  :global {
+    // .ant-modal-body {
+    //   font-weight: bold;
+    //   color: black;
+    //   font-size: 15px;
+    // }
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    .ant-modal-header {
+      padding: 22px 0;
+      align-items: center;
+      height: 65px;
+      border-radius: 3px;
+      background-color: #36485e;
+
+      // .ant-modal-title {
+      //   text-align: center;
+      //   font-family: PingFangTC;
+      //   font-size: 16px;
+      //   font-weight: 600;
+      //   font-style: normal;
+      //   font-stretch: normal;
+      //   line-height: normal;
+      //   letter-spacing: normal;
+      //   color: #ffffff;
+      // }
+    }
+
+    .ant-btn-primary {
+      width: 77px;
+      height: 40px;
+      background-color: #edf0f7;
+      border: none;
+
+      span {
+        font-family: PingFangTC;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0c293a;
+      }
+    }
+
+    .anticon-close {
+      color: white;
+    }
+  }
+
+  .content {
+    padding: 0 2px 0 6px;
+
+    .votetitle {
+      width: 100%;
+      padding: 12px;
+      border-bottom: 1px solid #dae2ed;
+    }
+  }
+}
+
+.userinfo {
+  // display: flex;
+  // align-items: center;
+  padding: 19px 0 0 0;
+  // flex-wrap: wrap;
+  font-weight: bold;
+  .box {
+    margin-left: 16px;
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    .userAvatarAndSelect {
+      width: 100%;
+      margin-left: 27px;
+      .closeBox {
+        display: flex;
+        justify-content: space-between;
+        .avatarName {
+          line-height: 30px;
+          display: flex;
+          align-items: center;
+        }
+        .closeVote {
+          flex-shrink: 0;
+          width: 150px;
+          height: 30px;
+          outline: none;
+          background-color: #36485e;
+          border-radius: 5px;
+          border-color: 0;
+          font-size: 12px;
+          font-weight: 600;
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+  .status {
+    // margin-left: 66px;
+    :global {
+      .ant-select {
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+.option {
+  padding: 0 12px 0 17px;
+  .item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dae2ed;
+    padding: 18px 14px;
+
+    input {
+      margin-left: 5px;
+      width: 100%;
+    }
+  }
+}
+
+.addoption {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid #dae2ed;
+
+  .addIcon {
+    margin-right: 5px;
+  }
+  .addSpan {
+    color: #4a90e2;
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  border-bottom: 1px solid #dae2ed;
+}
+
+.icon {
+  display: flex;
+  border-top: solid 1px #dae2ed;
+  border-bottom: solid 1px #dae2ed;
+  padding: 10px 15px;
+  align-items: center;
+  .addtext {
+    margin-right: 36px;
+  }
+  .icons {
+    display: flex;
+    border-radius: 7px;
+    background-color: #edf0f7;
+    padding: 5px;
+    margin-right: 6px;
+  }
+}
+
+.endDays {
+  :global {
+    .ant-select-selection-selected-value {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.disable {
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+.createpost {
+  :global {
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-btn-primary {
+      width: 77px;
+      height: 40px;
+      background-color: #edf0f7;
+      border: none;
+
+      span {
+        font-family: PingFangTC;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0c293a;
+      }
+    }
+
+    // .ant-modal-header {
+    //   width: 585px;
+    //   height: 65px;
+    //   border-radius: 3px;
+    //   background-color: #36485e;
+
+    //   // .ant-modal-title {
+    //   //   text-align: center;
+    //   //   font-family: PingFangTC;
+    //   //   font-size: 16px;
+    //   //   font-weight: 600;
+    //   //   font-style: normal;
+    //   //   font-stretch: normal;
+    //   //   line-height: normal;
+    //   //   letter-spacing: normal;
+    //   //   color: #ffffff;
+    //   // }
+    // }
+
+    .ant-input {
+      outline: none;
+      border-style: none;
+      overflow: hidden;
+    }
+
+    .ant-select {
+      margin-right: 9px;
+    }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+}

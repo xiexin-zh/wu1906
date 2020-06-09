@@ -1,0 +1,35 @@
+.editor {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  cursor: text;
+  padding: 16px;
+  border-radius: 2px;
+  margin-bottom: 2em;
+  box-shadow: inset 0px 1px 8px -3px #ababab;
+  background: #fefefe;
+  overflow-y: scroll;
+  word-break: break-all;
+}
+
+.editor :global(.public-DraftEditor-content) {
+  height: 140px;
+}
+
+.editorComment {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: text;
+  border-radius: 5px;
+  background: #fefefe;
+  overflow-y: scroll;
+  word-break: break-all;
+}
+
+.editorComment :global(.public-DraftEditor-content) {
+  max-height: 100px;
+}
+
+.options {
+  margin-bottom: 20px;
+}

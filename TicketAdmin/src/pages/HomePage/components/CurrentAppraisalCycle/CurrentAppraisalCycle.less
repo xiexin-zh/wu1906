@@ -1,0 +1,52 @@
+.CurrentAppraisalCycleBox {
+  display: flex;
+  align-items: center;
+  // width: 270px;
+  height: 125px;
+  background: rgba(239, 249, 249, 1);
+  border-radius: 12px;
+  .CountContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: bold;
+    font-size: 16px;
+    background: rgba(239, 249, 249, 1);
+    border-radius: 12px;
+  }
+  .line {
+    display: inline-block;
+    width: 2px;
+    height: 56px;
+    background: rgba(36, 159, 222, 1);
+    opacity: 0.2;
+  }
+  .numberBox {
+    flex: 1 0 auto;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+    .numFont {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 400;
+      font-size: 16px;
+      font-family: PingFang SC;
+    }
+    .totalWork {
+      color: rgba(51, 51, 51, 1);
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Myriad Pro;
+    }
+    .rejectionProportion {
+      color: rgba(51, 51, 51, 1);
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Myriad Pro;
+    }
+  }
+}

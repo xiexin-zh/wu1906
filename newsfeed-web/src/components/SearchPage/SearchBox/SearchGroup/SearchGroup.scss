@@ -1,0 +1,63 @@
+.header {
+  height: 37px;
+  background-color: #dae2ed;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0c293a;
+}
+
+.groupWrapper {
+  background-color: #ffffff;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+}
+.group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  padding: 0 20px 0 14px;
+  & + .group {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 19px 0 8px;
+      height: 1px;
+      background-color: #dae2ed;
+      background-clip: content-box;
+    }
+  }
+  .detail {
+    flex: 1 1;
+    margin-left: 23px;
+    word-break: break-word;
+    overflow: hidden;
+  }
+  .groupName {
+    margin-top: 10px;
+  }
+  .btn {
+    width: 77px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #dae2ed;
+    color: #0c293a;
+    border: none;
+    &.followed {
+      border-radius: 0;
+      background-color: #475f77;
+      color: #ffffff;
+    }
+  }
+}

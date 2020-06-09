@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="14" viewBox="0 0 56 14">
+    <defs>
+        <text id="a" font-family="PingFangTC-Medium, PingFang TC" font-size="14" font-weight="400">
+            <tspan x="67" y="33">最新動態</tspan>
+        </text>
+        <filter id="b" width="105.4%" height="115%" x="-2.7%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498961976 0"/>
+        </filter>
+        <filter id="c" width="105.4%" height="115%" x="-2.7%" y="-7.5%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498961976 0"/>
+        </filter>
+    </defs>
+    <g fill="#0C293A" fill-rule="evenodd" transform="translate(-67 -21)">
+        <use xlink:href="#a"/>
+        <use filter="url(#b)" xlink:href="#a"/>
+        <use filter="url(#c)" xlink:href="#a"/>
+    </g>
+</svg>

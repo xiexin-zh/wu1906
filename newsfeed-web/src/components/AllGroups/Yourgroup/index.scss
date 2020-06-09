@@ -1,0 +1,48 @@
+.box {
+  background-color: #ffffff;
+
+  .header {
+    display: flex;
+    padding: 13px 21px;
+    justify-content: space-between;
+    align-items: center;
+
+    .headerTitle{
+      font-size: 16px;
+      font-weight: 600;
+      color: #0c293a;
+    }
+    .showMore{
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    display: flex;
+    // overflow: hidden;
+    text-align: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    margin: 0 10px;
+    a {
+      color: black;
+      width: 126px;
+      // margin: auto;
+      margin-right: 5px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+    div {
+      border-radius: 0;
+      margin-right: 10px;
+    }
+    .groupName {
+      display: inline-block;
+      width: 126px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

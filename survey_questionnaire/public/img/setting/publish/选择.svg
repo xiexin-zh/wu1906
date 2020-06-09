@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>选择</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="选择" transform="translate(-2.000000, -2.000000)">
+            <g id="分组">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                <path d="M16,4 C22.6,4 28,9.4 28,16 C28,22.6 22.6,28 16,28 C9.4,28 4,22.6 4,16 C4,9.4 9.4,4 16,4 Z M16,2 C8.2,2 2,8.2 2,16 C2,23.8 8.2,30 16,30 C23.8,30 30,23.8 30,16 C30,8.2 23.8,2 16,2 Z" id="形状" fill="#4A4A4A" fill-rule="nonzero"></path>
+                <path d="M14,22 C13.6,22 13.2,21.8 13,21.6 L9.8,18.4 C9.4,18 9.4,17.4 9.8,17 C10.2,16.6 10.8,16.6 11.2,17 L14,19.8 L22.6,11.2 C23,10.8 23.6,10.8 24,11.2 C24.4,11.6 24.4,12.2 24,12.6 L15,21.6 C14.8,22 14.4,22 14,22 Z" id="路径" fill="#2567EB"></path>
+            </g>
+        </g>
+    </g>
+</svg>

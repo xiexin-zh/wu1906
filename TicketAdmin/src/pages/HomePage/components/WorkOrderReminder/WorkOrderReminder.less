@@ -1,0 +1,55 @@
+.WorkOrderReminderBox {
+  width: 659px;
+  // height: 496px;
+  margin-right: 10px;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 1);
+  :global {
+    .ant-table-thead {
+      background: rgba(242, 249, 253, 1);
+      border: none;
+    }
+    .ant-table-thead > tr > th:nth-child(3),
+    .ant-table-thead > tr > th:nth-child(5),
+    .ant-table-tbody > tr > td:nth-child(3),
+    .ant-table-tbody > tr > td:nth-child(5) {
+      text-align: center;
+    }
+    .ant-table-thead > tr > th {
+      border-bottom: none;
+    }
+    .ant-table-small,
+    .ant-tabs-bar {
+      border: none;
+    }
+    .ant-tabs-tab {
+      font-weight: bold;
+      font-size: 15px;
+      font-family: MicrosoftYaHei;
+    }
+    .ant-tabs-tab img {
+      vertical-align: sub;
+    }
+
+    .ant-tabs-tab-active {
+      color: #249fde;
+    }
+    .ant-tabs-ink-bar-animated {
+      height: 4px;
+      background: #249fde;
+      border-radius: 2px;
+    }
+  }
+  .operation {
+    a {
+      color: #249fde;
+    }
+    .line {
+      display: inline-block;
+      width: 1px;
+      height: 12px;
+      margin: 0 4px;
+      background: rgba(204, 204, 204, 1);
+    }
+  }
+}

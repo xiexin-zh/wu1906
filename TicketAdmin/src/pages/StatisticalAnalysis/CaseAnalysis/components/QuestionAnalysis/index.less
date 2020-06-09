@@ -1,0 +1,112 @@
+.questionAnalysis {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header {
+    display: flex;
+    min-height: 80px;
+    color: #333;
+
+    .selectClass {
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .leftBox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .title {
+        margin-right: 30px;
+        font-size: 16px;
+      }
+
+      .selectOption {
+        width: 100px;
+        height: 32px;
+      }
+    }
+
+    .createTime {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .selectTime {
+        display: flex;
+        justify-content: flex-end;
+
+        .rangePicker {
+          width: 230px;
+          margin-left: 16px;
+        }
+      }
+
+      .downImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 90px;
+        height: 32px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex: 1;
+
+    .echarts {
+      flex: 1;
+
+      :global {
+        .echarts-for-react {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+
+    .legend {
+      display: flex;
+      flex: 1;
+      box-sizing: border-box;
+      padding-top: 40px;
+
+      .legendItem {
+        flex: 1;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 40px;
+          color: #333;
+          font-size: 16px;
+
+          .circle {
+            display: block;
+            width: 14px;
+            height: 14px;
+            margin-right: 16px;
+            border-radius: 50%;
+          }
+          .levelCount {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.userModal {
+  :global {
+    .ant-modal-content {
+      width: 585px;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-modal-close-x {
+      color: white;
+    }
+  }
+}
+
+.emojiLikeBox {
+  height: 500px;
+}
+.likeTab {
+  height: 59px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+
+  .tabList {
+    height: 50px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+.listBox {
+  height: 400px;
+  overflow: hidden;
+}
+
+.userDetail {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #cccaca;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .userAvatar {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+
+      .indexSymbol {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: #4a4a4a;
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .userName {
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  .followDetail {
+    float: right;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .followBtn {
+      width: 80px;
+      height: 35px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 35px;
+      text-align: center;
+      background-color: #475f77;
+      color: #ffffff;
+    }
+
+    .followActive {
+      width: 80px;
+      height: 35px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 35px;
+      text-align: center;
+      background-color: #edf0f7;
+      color: #0c293a;
+    }
+  }
+}
+.userDetail > div {
+  height: 100%;
+  float: left;
+}
+
+.pagination {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

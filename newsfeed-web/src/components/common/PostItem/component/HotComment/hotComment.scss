@@ -1,0 +1,171 @@
+.hotComment {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.commentOne {
+  width: 100%;
+  display: flex;
+}
+
+.oneContent {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.contentText {
+  cursor: pointer;
+}
+
+.OneName {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #36485e;
+}
+
+.oneAvatar {
+  width: 40px;
+  height: 40px;
+}
+
+.timeAndName {
+  flex: 1;
+}
+
+.moreComment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.noticeDetail :global .ant-modal-close-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+}
+
+.commentBox {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.secondBox {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.commentHead {
+  width: 100%;
+  display: flex;
+}
+
+.commentLeft {
+  width: 40px;
+  height: 40px;
+}
+
+.commentRight {
+  flex: 1;
+}
+.commentOptions {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.commentOptions p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.replyOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.replOneAvatar {
+  width: 40px;
+  height: 40px;
+}
+
+.replyOneInput {
+  flex: 1;
+}
+
+.identityOne {
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+}
+
+.identityOne > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.identityOne p:last-child {
+  margin-left: 5px;
+}
+
+.commentTwo {
+  display: flex;
+}
+
+.commentTwoAvatar {
+  width: 40px;
+  height: 40px;
+}
+
+.commentItem {
+  flex: 1;
+}
+
+.activeSelect {
+  background-color: rgb(60, 136, 241);
+  color: #fff;
+}
+
+.hotOperate {
+  height: 25px;
+  display: flex;
+  font-size: 12px;
+}
+
+.operateOptions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cursor {
+  cursor: pointer;
+}

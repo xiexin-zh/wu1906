@@ -1,0 +1,15 @@
+.imgWrapper {
+  height: 100%;
+  width: 100%;
+  // max-width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,147 @@
+.sprint {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.spTitle {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.tableStyle {
+  flex: 1;
+}
+
+.sprintName {
+  background-color: rgb(140, 195, 101);
+  width: 400px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 50px;
+}
+
+.titleSpace {
+  margin: 0 10px;
+}
+
+.summary {
+  td {
+    text-align: center;
+  }
+}
+
+.rowWhite {
+  background-color: #fff;
+}
+
+.rowGray {
+  background-color: #fafafa;
+}
+
+.specialTd {
+  padding: 0 !important;
+}
+.tdGreen {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(176, 252, 162);
+}
+.tdYellow {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250, 250, 151);
+}
+.tdNomal {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+}
+.setFont {
+  font-weight: 600;
+}
+
+.audio {
+  position: absolute;
+  left: -9999px;
+  bottom: 0;
+  z-index: 1;
+}
+
+.flexRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.body {
+	background-color: #f4f4f4;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	// margin: 15px 0;
+	height: 14px;
+	width: 100%;
+}
+
+.progressDone {
+  background: linear-gradient(to left, #F2709C, #FF9472);
+  box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 3s ease 0.3s;
+  font-size: 12px;
+}
+
+.userContent{
+	position: relative;
+  width: 100%;
+}
+
+.progressUser{
+  width: 0;
+  opacity: 0;
+  position: 'relative';
+  transition: 3s ease 0.3s;
+  display: flex;
+  flex-direction: row;
+}

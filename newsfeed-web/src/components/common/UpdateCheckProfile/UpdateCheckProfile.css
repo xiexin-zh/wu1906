@@ -1,0 +1,95 @@
+.avatarBox {
+  position: absolute;
+  left: 15%;
+  top: -45px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* cursor: pointer; */
+}
+.bgBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  color: #fff;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+.avatarBox:hover .avatarLayer {
+  transform: translateY(-200px);
+}
+.bgBox:hover .bgStyle {
+  display: flex;
+}
+.bgStyle {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  color: #fff;
+  padding: 0 40px 45px 0;
+  overflow: hidden;
+}
+.avatarLayer {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 200px;
+  left: -5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  color: #fff;
+}
+.avatarLayer > div {
+  display: block;
+}
+.avatarLayer > div label,
+.bgStyle div label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.avatarLayer > div p {
+  text-align: center;
+}
+.updateHeadBox {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.uploadInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.mouseHover {
+  cursor: pointer;
+}

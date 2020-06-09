@@ -1,0 +1,58 @@
+// $fontSize: 16px;
+// $lineHeight: 1.25 * $fontSize;
+// $lineNumberLimit: 5;
+
+.wrapper {
+  // pointer-events: none;
+  position: relative;
+
+  // margin-bottom: $lineHeight;
+  &.showAllContent {
+    .textBox {
+      max-height: none;
+    }
+    .showMoreBtn {
+      transform: translateY(100%);
+    }
+  }
+}
+
+.textBox {
+  color: #36485e;
+  white-space: pre-line;
+  // word-break: break-word;
+  overflow: hidden;
+  // font-size: 16px;
+  // line-height: $lineHeight;
+  // max-height: $lineHeight*$lineNumberLimit;
+  // pointer-events: none;
+  margin-bottom: 0;
+  display: flex;
+  // word-break: break-all;
+}
+
+.showMoreBtn {
+  pointer-events: auto;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #36485e;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // line-height: $lineHeight;
+  padding: 0 9px 0 45px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    white 30%,
+    white
+  );
+}
+
+.flag {
+  display: inline-block;
+  height: 1em;
+}

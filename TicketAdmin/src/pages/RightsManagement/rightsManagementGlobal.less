@@ -1,0 +1,57 @@
+.managementBox {
+  margin: 15px 8px 16px 8px;
+  :global {
+    .ant-table-wrapper {
+      padding: 20px;
+    }
+    .ant-table-thead > tr > th {
+      text-align: center;
+      background-color: rgba(36, 159, 222, 0.1);
+    }
+    .ant-table-tbody > tr > td {
+      text-align: center;
+      background-color: #fff;
+    }
+    .ant-table {
+      height: calc(100vh - 350px);
+      overflow-y: auto;
+    }
+  }
+  .tableBox {
+    background-color: #fff;
+  }
+  .searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin: 8px 0;
+    padding: 0 24px;
+    background: #fff;
+    :global {
+      .ant-input {
+        width: 222px;
+        margin-right: 16px;
+      }
+    }
+    .searchLeft {
+      display: flex;
+    }
+  }
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  // margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.menuName {
+  display: inline-block;
+  width: 80px;
+}
+
+.noMargin {
+  margin: 0;
+}

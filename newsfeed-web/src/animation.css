@@ -1,0 +1,59 @@
+/* 个人/群组 背景动画 */
+/* .hidePersonalMain {
+  animation: hideMove 0.3s linear forwards;
+}
+@keyframes hideMove {
+  from {
+    height: 428px;
+  }
+  to {
+    height: 0;
+  }
+}
+.showPersonalMain {
+  animation: showMove 0.3s linear forwards;
+}
+@keyframes showMove {
+  from {
+    height: 0;
+  }
+  to {
+    height: 428px;
+  }
+} */
+/* 群组 头像动画 */
+/* .hideGroupAvatarBox {
+  animation: hideMoveHead 0.3s ease-in forwards;
+}
+@keyframes hideMoveHead {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.cancelGroupAvatarPadding {
+  animation: hideGroupAvatarFather 0.1s ease-in forwards;
+}
+@keyframes hideGroupAvatarFather {
+  from {
+    padding-top: 200px;
+  }
+  to {
+    padding-top: 0;
+  }
+} */
+/* 个人 头像动画 */
+/* .hidePersonalAvatarBox {
+  animation: showMoveHead 0.1s ease-in forwards;
+}
+@keyframes showMoveHead {
+  from {
+    top: -45px;
+  }
+  to {
+    top: 0;
+  }
+} */
