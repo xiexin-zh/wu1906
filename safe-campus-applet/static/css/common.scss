@@ -1,0 +1,106 @@
+/**
+ * @des 公共样式
+ */
+ 
+ /**
+	* 图片边框
+	*/
+.border-img {
+	border: 4px #fff solid
+}
+/**
+ * 表单高度
+ */
+.form-item {
+	height: 98rpx;
+	border-bottom: 1px $u-border-color solid;
+}
+/**
+ * 提示信息图标
+ */
+.tips-icon {
+	background: url(http://canpointtest.com/mini-img/message-tips-icon.png) no-repeat;
+	background-size: 34rpx 34rpx;
+	padding-left: 50rpx;
+}
+/**
+ * 向右箭头
+ */
+.rit-arrow {
+	width: 40rpx;
+	height: 40rpx;
+	background: url('http://canpointtest.com/mini-img/rit-arrow.png') no-repeat 10rpx 6rpx;
+	background-size: 32rpx 32rpx;
+}
+/**
+ * 向下箭头
+ */
+.down-arrow {
+	width: 40rpx;
+	height: 40rpx;
+	background: url('http://canpointtest.com/mini-img/rit-arrow.png') no-repeat 10rpx 6rpx;
+	transform: rotate(90deg);
+	margin-top: -8rpx;
+	background-size: 32rpx 32rpx;
+}
+/**
+ * 切换班级
+ */
+.change-class {
+	height: 36rpx;
+	background: url('http://canpointtest.com/mini-img/change-icon.png') no-repeat 0 0rpx;
+	background-size: 35rpx 35rpx;
+	padding-left: 40rpx;
+	font-size: 24rpx;
+}
+.bind-class {
+	width: 180rpx;
+	height: 180rpx;
+	background-color: #ccc;
+	border-radius: 4rpx;
+	&.act {
+		color:#fff !important;
+		background: url('http://canpointtest.com/mini-img/choose-ok-white.png') no-repeat 95% 10rpx;
+		background-color: $u-type-primary;
+		background-size: 36rpx 36rpx;
+	}
+}
+.class-icon {
+	height: 100rpx;
+	width: 100rpx;
+	border-radius: $u-border-radius;
+	background-color: $u-bg-color;
+	display: block;
+}
+
+/**
+ * 公共按钮：背景蓝色文字白色和背景白色文字蓝色
+ */
+.primary-btn {
+	height: 95rpx;
+	text-align: center;
+	font-size: 32rpx;
+	border-radius: 100rpx;
+	color: #fff;
+	background-color: $u-type-primary;
+	line-height: 95rpx;
+}
+.second-btn {
+	height: 95rpx;
+	text-align: center;
+	font-size: 32rpx;
+	border-radius: 100rpx;
+	color: $u-type-primary;
+	border: 1px $u-type-primary solid;
+	background-color: #fff;
+	line-height: 95rpx;
+}
+.add-btn {
+		background-color: $u-bg-color;
+		height: 120rpx;
+		width: 100%;
+		position: fixed;
+		z-index: 99;
+		bottom: 0rpx;
+		left: 0rpx;
+	}

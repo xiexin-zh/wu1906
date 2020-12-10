@@ -1,0 +1,482 @@
+<template>
+  <div class="students page-layout qui-fx">
+    <sub-form
+      ref="form"
+      @submit-form="submitForm"
+      @selectPanel="showSelectPanel"
+      :title="title"
+      v-model="formStatus"
+      :form-data="formData"
+    >
+      <template slot="selectPanel">
+        <a-input
+          placeholder="请选择"
+          :read-only="true"
+          :disabled="selectDisabled"
+          @focus="showSelectPanel"
+          v-model="teacherName"
+        >
+          <a-icon slot="suffix" type="right" />
+        </a-input>
+      </template>
+    </sub-form>
+    <teacher-panel
+      title="添加成员"
+      v-if="panelStatus"
+      v-model="panelStatus"
+      @submit="confirmSelect"
+    ></teacher-panel>
+    <div class="qui-fx qui-fx-jsb" style="width: 100%">
+      <div class="right qui-fx-ver qui-fx-f1" style="padding-right: 10px">
+        <search-form isReset @search-form="searchForm" :search-label="searchLabel">
+          <div slot="left" v-if="isNewYear">
+            <a-button icon="plus" class="add-btn" @click="addPaper(0)">添加</a-button>
+          </div>
+        </search-form>
+        <table-list
+          is-zoom
+          @clickRow="clickRow"
+          :page-list="pageList"
+          v-model="chooseList"
+          :columns="columns"
+          :table-list="paperList"
+        >
+          <template v-slot:actions="action" v-if="isNewYear">
+            <a-tooltip placement="topLeft" title="编辑">
+              <a-button
+                size="small"
+                class="edit-action-btn"
+                icon="form"
+                @click.stop="addPaper(1, action.record)"
+              ></a-button>
+            </a-tooltip>
+            <a-popconfirm
+              placement="left"
+              okText="确定"
+              cancelText="取消"
+              @confirm="deleteList(action.record)"
+            >
+              <template slot="title"> 您确定删除吗? </template>
+              <a-tooltip placement="topLeft" title="删除">
+                <a-button size="small" class="del-action-btn" icon="delete"></a-button>
+              </a-tooltip>
+            </a-popconfirm>
+          </template>
+        </table-list>
+        <page-num v-model="pageList" :total="total" @change-page="showList"></page-num>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapState, mapActions } from 'vuex'
+import TableList from '@c/TableList'
+import PageNum from '@c/PageNum'
+import SubForm from '../../component/SubForm'
+import TeacherPanel from '../../component/TeacherPanel'
+import SearchForm from '@c/SearchForm'
+import Tools from '@u/tools'
+import moment from 'moment'
+const columns = [
+  {
+    title: '序号',
+    width: '8%',
+    scopedSlots: {
+      customRender: 'index'
+    }
+  },
+  {
+    title: '教职工姓名',
+    dataIndex: 'userName',
+    width: '8%'
+  },
+  {
+    title: '工号',
+    dataIndex: 'workNo',
+    width: '10%'
+  },
+  {
+    title: '论文(课题)题目',
+    dataIndex: 'thesisTitle',
+    width: '15%'
+  },
+  {
+    title: '发布刊物',
+    dataIndex: 'journal',
+    width: '10%'
+  },
+  {
+    title: '发表日期',
+    dataIndex: 'publishDate',
+    width: '15%',
+    customRender: (text) => {
+      return Tools.getDate(text, 1)
+    }
+  },
+  {
+    title: '独立或合作',
+    dataIndex: 'channelTypeName',
+    width: '10%'
+  },
+  {
+    title: '级别',
+    dataIndex: 'levelName',
+    width: '10%'
+  },
+  {
+    title: '操作',
+    width: '10%',
+    scopedSlots: {
+      customRender: 'action'
+    }
+  }
+]
+const searchLabel = [
+  {
+    value: 'time',
+    type: 'rangeTime',
+    label: '时间'
+  },
+  {
+    value: 'keyword',
+    type: 'input',
+    label: '姓名/工号'
+  },
+  {
+    list: [
+      {
+        key: '',
+        val: '全部'
+      },
+      {
+        key: 1,
+        val: '独立'
+      },
+      {
+        key: 2,
+        val: '合作'
+      }
+    ],
+    value: 'channelType',
+    type: 'select',
+    label: '独立或合作'
+  },
+  {
+    list: [
+      {
+        key: '',
+        val: '全部'
+      },
+      {
+        key: 1,
+        val: '特种刊物'
+      },
+      {
+        key: 2,
+        val: '权威核心刊物'
+      },
+      {
+        key: 3,
+        val: '重要核心刊物'
+      },
+      {
+        key: 4,
+        val: '一般核心刊物'
+      },
+      {
+        key: 5,
+        val: '一般公开刊物'
+      },
+      {
+        key: 6,
+        val: '一般受限刊物'
+      }
+    ],
+    value: 'levelType',
+    type: 'select',
+    label: '级别'
+  }
+]
+const formData = [
+  {
+    value: 'userName',
+    initValue: '',
+    type: 'selectPanel',
+    label: '获奖教师',
+    readonly: true,
+    placeholder: '请选择'
+  },
+  {
+    value: 'thesisTitle',
+    initValue: '',
+    type: 'input',
+    label: '论文(课题)题目',
+    max: 30,
+    placeholder: '限30字内'
+  },
+  {
+    value: 'journal',
+    initValue: '',
+    type: 'input',
+    label: '发表刊物',
+    max: 20,
+    placeholder: '限20字内'
+  },
+  {
+    value: 'publishDate',
+    initValue: '',
+    type: 'singleTime',
+    label: '发表日期',
+    placeholder: '年/月/日'
+  },
+  {
+    value: 'channelType',
+    initValue: '',
+    list: [
+      {
+        key: 1,
+        val: '独立'
+      },
+      {
+        key: 2,
+        val: '合作'
+      }
+    ],
+    type: 'select',
+    label: '独立或合作',
+    placeholder: '请选择'
+  },
+  {
+    value: 'levelType',
+    initValue: '',
+    list: [
+      {
+        key: 1,
+        val: '特种刊物'
+      },
+      {
+        key: 2,
+        val: '权威核心刊物'
+      },
+      {
+        key: 3,
+        val: '重要核心刊物'
+      },
+      {
+        key: 4,
+        val: '一般核心刊物'
+      },
+      {
+        key: 5,
+        val: '一般公开刊物'
+      },
+      {
+        key: 6,
+        val: '一般受限刊物'
+      }
+    ],
+    type: 'select',
+    label: '级别',
+    placeholder: '请选择'
+  }
+]
+export default {
+  name: 'TaskPaper',
+  components: {
+    TableList,
+    PageNum,
+    SubForm,
+    SearchForm,
+    TeacherPanel
+  },
+  data() {
+    return {
+      dialogTag: false,
+      confirmLoading: false,
+      columns,
+      searchLabel,
+      title: '添加',
+      formStatus: false,
+      panelStatus: false,
+      formData,
+      teacherName: '',
+      gradeId: '',
+      classId: '',
+      classChoose: '',
+      chooseList: [],
+      type: 0,
+      total: 0,
+      pageList: {
+        page: 1,
+        size: 20
+      },
+      paperList: [],
+      schoolYear: '',
+      schoolYearId: '',
+      gradeCode: '',
+      classCode: '',
+      isNewYear: true,
+      userId: '',
+      keyObj: {},
+      userCode: '',
+      listId: '',
+      selectDisabled: false
+    }
+  },
+  computed: {
+    ...mapState('home', ['userInfo'])
+  },
+  created() {},
+  mounted() {
+    this.showList()
+  },
+  methods: {
+    ...mapActions('home', ['addTeacherPaper', 'getAllTeaPaperList', 'delTeaPaper', 'editTeaPaper']),
+    searchForm(values) {
+      const req = {
+        channelType: values.channelType,
+        keyWord: values.keyword || '',
+        levelType: values.levelType,
+        startDate: values.time[0],
+        endDate: values.time[1]
+      }
+      this.showList(req)
+    },
+    async submitForm(values) {
+      if (!this.teacherName) {
+        this.$message.warning('请选择教职工')
+        return
+      }
+      if (this.type === 0) {
+        const res = await this.addTeacherPaper({
+          ...values,
+          publishDate: Tools.getDate(new Date(values.publishDate).getTime(), 5),
+          userName: this.teacherName,
+          schoolCode: this.userInfo.schoolCode,
+          userCode: this.userCode,
+          userId: this.userId
+        })
+        if (res.code === 200) {
+          this.formStatus = false
+          this.showList()
+        }
+      } else {
+        const res = await this.editTeaPaper({
+          ...values,
+          publishDate: Tools.getDate(new Date(values.publishDate).getTime(), 5),
+          userName: this.teacherName,
+          id: this.listId
+        })
+        if (res.code === 200) {
+          this.formStatus = false
+          this.showList()
+        }
+      }
+      this.formData = formData
+      this.formData[0].initValue = ''
+    },
+    addPaper(type, record) {
+      this.formStatus = true
+      if (type) {
+        this.title = '编辑'
+        this.formData = this.$tools.fillForm(formData, record)
+        this.teacherName = record.userName
+        this.formData[3].initValue = moment(record.publishDate)
+        this.type = 1
+        this.listId = record.id
+        this.selectDisabled = true
+      } else {
+        this.title = '添加'
+        this.formData = formData
+        this.teacherName = ''
+        this.type = 0
+        this.selectDisabled = false
+      }
+    },
+    async showList(obj) {
+      const req = {
+        channelType: '',
+        endDate: '',
+        keyWord: '',
+        levelType: '',
+        schoolCode: this.userInfo.schoolCode,
+        startDate: '',
+        ...obj,
+        ...this.pageList
+      }
+      const res = await this.getAllTeaPaperList(req)
+      if (!res.data.list) {
+        this.paperList = []
+        return
+      }
+      this.paperList = res.data.list
+      this.total = res.data.total
+    },
+    async deleteList(record) {
+      const res = await this.delTeaPaper({ id: record.id })
+      if (res.code === 200) {
+        this.showList()
+      }
+    },
+    clickRow(id) {
+      console.log(id)
+    },
+    showSelectPanel() {
+      this.panelStatus = true
+    },
+    confirmSelect(item) {
+      this.panelStatus = false
+      const { userName, id, userCode } = item
+      this.teacherName = userName || ''
+      this.userId = id
+      this.userCode = userCode
+    }
+  }
+}
+</script>
+<style lang="less" scoped>
+.students {
+  background: #fff;
+  height: 100%;
+  .left {
+    padding: 10px;
+  }
+  .right {
+    padding: 0 10px;
+    border-left: 1px solid @bor-color;
+    .action {
+      div {
+        cursor: pointer;
+        margin: 4px 30px 0 0;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.modal {
+  padding: 0 40px;
+  .line {
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    min-width: 70px;
+  }
+  .download {
+    color: #6882da;
+    cursor: pointer;
+  }
+  /deep/ .ant-upload-list-item-info {
+    padding: 0 22px 0 4px;
+  }
+}
+</style>

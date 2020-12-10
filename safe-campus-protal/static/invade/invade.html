@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>实时入侵系统</title>
+    <link rel="stylesheet" href="css/invade.css">
+</head>
+
+<body>
+    <div id="invade" :style="{height:height+'px'}">
+        <div class="star"></div>
+        <div class="star pink"></div>
+        <div class="star blue"></div>
+        <div class="canvas-box">
+            <canvas id="canvas">你的浏览器不支持canvas</canvas>
+        </div>
+        <div class="screen_width flex_center">
+            <div class="title">
+                <div class="icon"></div>
+                <h1>实时入侵系统</h1>
+                <div class="icon"></div>
+            </div>
+            <div class="parent qui-fx-jsb qui-fx-ac">
+                <div class="qui-fx">
+                    <select name="chooseFloor" id="selecte" v-model="floorCode" class="shortselect"
+                        @change="chooseFloor">
+                        <option value="">选择楼层</option>
+                        <option v-for="list in floorList" :key="list.id" :value="list.categoryCode">
+                            {{list.categoryName}}
+                        </option>
+                    </select>
+                    <div class="mycheck qui-fx-ac">
+                        <!-- <input type="checkbox" v-model="isPush" id="checkbox1" name="" />
+                        <label for="checkbox1">开启弹框警报</label> -->
+                        <div class="qui-fx-ac">
+                            <span class="weui-switch" :class="{'weui-switch-on' : isPush}" @click="push"
+                                style="position:relative">
+                                <div v-if="isPush"
+                                    style="width:100%;height:100%;position:absolute;padding:0 5px;line-height:20px;color:#FFF;user-select:none">
+                                </div>
+                                <div v-if="!isPush"
+                                    style="width:100%;height:100%;position:absolute;padding:0 5px;right:2px;line-height:22px;color:#7A7A7A;text-align:right;user-select:none">
+                                </div>
+                            </span>
+                            <span>开启弹框警报</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign">
+                    <span class="badly">重大</span>
+                    <span class="serious">严重</span>
+                    <span class="general">一般</span>
+                </div>
+            </div>
+            <div class="pop" v-if="isPush">
+                <div class="mask" v-show="maskShow" @click="setMaskShow"></div>
+                <div :class="level==='1'?'child badly': level==='2'?'child serious':'child general'" v-show="maskShow">
+                    <div class="pic">
+                        <div class="icon">
+                            <img :src="srcUrl" alt />
+                        </div>
+                        <img :src="currentImg" alt="">
+                    </div>
+                    <div class="info qui-fx">
+                        <div class="left">
+                            <div class="people qui-fx qui-fx-ac">
+                                <div class="ic"></div>
+                                <div class="qui-te">
+                                    <span>人员:</span>
+                                    <span>{{ people }}</span>
+                                </div>
+                            </div>
+                            <div class="date qui-fx qui-fx-ac">
+                                <div class="ic"></div>
+                                <div class="qui-te">
+                                    <span>时间:</span>
+                                    <span>{{ date | getTime(3) }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="site qui-fx qui-fx-ac">
+                                <div class="ic"></div>
+                                <div class="qui-te">
+                                    <span>位置:</span>
+                                    <span>{{ site }}</span>
+                                </div>
+                            </div>
+                            <div class="identity qui-fx qui-fx-ac">
+                                <div class="ic"></div>
+                                <div class="qui-te">
+                                    <span>身份:</span>
+                                    <span>{{ userType | getStatus() }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_box  flex_center">
+                <div class="card_handl">
+                    <div class="item qui-fx" v-for="(item,i) in dataList" :key="i">
+                        <div :class="item.level==='1'?'badly':item.level==='2'?'serious':'general'"></div>
+                        <div class="pic">
+                            <img :src="item.snapSrc" alt />
+                        </div>
+                        <div class="data qui-fx-ver">
+                            <div class="msg qui-fx-ver">
+                                <span class="tit qui-fx-jc qui-te"></span>
+                                <span class="site qui-fx-ac qui-te">人员：{{ item.name }}</span>
+                                <span class="date qui-fx-ac qui-te">时间：{{ item.date | getTime(4) }}</span>
+                                <span class="time qui-fx-ac qui-te">身份：{{ item.userType | getStatus() }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-1.7.js"></script>
+    <script src="js/qrm-pinming.js"></script>
+    <script src="js/invade.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>

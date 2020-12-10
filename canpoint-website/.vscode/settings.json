@@ -1,0 +1,6 @@
+{
+  "prettier.endOfLine": "lf",
+  "eslint.codeAction.disableRuleComment": {
+
+  }
+}

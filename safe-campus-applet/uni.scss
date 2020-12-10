@@ -1,0 +1,97 @@
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+@import 'uview-ui/theme.scss';
+/**间距 背景 圆角**/
+$u-mp-5: 5rpx;
+$u-mp-10: 10rpx;
+$u-mp-15: 15rpx;
+$u-mp-20: 20rpx;
+$u-mp-30: 30rpx;
+$u-mp-40: 40rpx;
+$u-type-white: #fff;
+
+$u-border-radius: 8rpx;
+$u-border-radius-middle: 16rpx;
+$u-border-radius-big: 32rpx;
+$u-border-radius-all: 100%;
+
+/* 字体大小 */
+$u-font-01: 24rpx;
+$u-font-02: 22rpx;
+$u-font-03: 20rpx;
+$u-font-1: 32rpx;
+$u-font-2: 34rpx;
+$u-font-3: 36rpx;
+
+/* 边框颜色 */
+$u-border-color-dark: #dcdfe6;
+$u-border-color-disabled: #ebeef5;
+$u-border-color-light: #e4e7ed;
+
+/* 颜色 */
+.u-type-primary-disabled-bg {
+  background-color: $u-type-primary-disabled;
+}
+.u-type-warning-disabled-bg {
+  background-color: $u-type-warning-disabled;
+}
+.u-type-success-disabled-bg {
+  background-color: $u-type-success-disabled;
+}
+
+.u-type-error-disabled-bg {
+  background-color: $u-type-error-disabled;
+}
+.u-type-info-disabled-bg {
+  background-color: $u-type-info-disabled;
+}
+.u-type-white {
+  color: $u-type-white !important;
+}
+.u-type-white-bg,
+.u-bg-fff {
+  background-color: $u-type-white !important;
+}
+.u-bg-color {
+  background-color: $u-bg-color !important;
+}
+.u-border-radius {
+  border-radius: $u-border-radius !important;
+}
+.u-border-radius-middle {
+  border-radius: $u-border-radius-middle !important;
+}
+.u-border-radius-big {
+  border-radius: $u-border-radius-big !important;
+}
+.u-border-radius-all {
+  border-radius: $u-border-radius-all !important;
+}
+.u-border-color {
+  border-color: $u-border-color !important;
+}
+.u-border-color-dark {
+  border-color: $u-border-color-dark !important;
+}
+.u-border-color-disabled {
+  border-color: $u-border-color-disabled !important;
+}
+.u-border-color-light {
+  border-color: $u-border-color-light !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

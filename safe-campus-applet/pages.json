@@ -1,0 +1,299 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "全品班级管家"
+			}
+		},
+		{
+			"path": "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪"
+			}
+		},
+		{
+			"path": "pages/common/entry",
+			"style": {
+				"navigationBarTitleText": "全品班级管家"
+			}
+		},
+		
+		{
+			"path": "pages/common/bindChild",
+			"style": {
+				"navigationBarTitleText": "绑定孩子"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages-basedata",
+			"pages": [
+				{
+					"path": "index/home",
+					"style": {
+						"navigationBarTitleText": "全品班级管家"
+					}
+				},
+				{
+					"path": "mine/bindChild",
+					"style": {
+						"navigationBarTitleText": "绑定孩子"
+					}
+				},
+				{
+					"path": "face/index",
+					"style": {
+						"navigationBarTitleText": "人像采集"
+					}
+				},
+				{
+					"path": "common/help",
+					"style": {
+						"navigationBarTitleText": "常见问题"
+					}
+				},
+				{
+					"path": "common/helpDetail",
+					"style": {
+						"navigationBarTitleText": "详情"
+					}
+				},
+				{
+					"path": "common/invitation",
+					"style": {
+						"navigationBarTitleText": "邀请加班"
+					}
+				},
+				{
+					"path": "class-manage/index",
+					"style": {
+						"navigationBarTitleText": "班级管理"
+					}
+				},
+				{
+					"path": "class-manage/addStudent",
+					"style": {
+						"navigationBarTitleText": "学生管理"
+					}
+				},
+				{
+					"path": "class-manage/addTeacher",
+					"style": {
+						"navigationBarTitleText": "老师管理"
+					}
+				}
+			]
+		},
+		{
+		"root": "pages-classcard",
+		"pages": [
+			{
+				"path": "notice/index",
+				"style": {
+					"navigationBarTitleText": "通知列表",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "notice/noticeDetail",
+				"style": {
+					"navigationBarTitleText": "通知详情"
+				}
+			},
+			{
+				"path": "notice/createNotice",
+				"style": {
+					"navigationBarTitleText": "创建通知"
+				}
+			},
+			{
+				"path": "notice/chooseObject",
+				"style": {
+					"navigationBarTitleText": "选择发布对象"
+				}
+			},
+			{
+				"path": "notice/publishSuccess",
+				"style": {
+					"navigationBarTitleText": "发布成功"
+				}
+			},
+			{
+				"path": "notice/seeNotice",
+				"style": {
+					"navigationBarTitleText": "阅读情况"
+				}
+			},
+			{
+				"path": "notice/noticeTemplate",
+				"style": {
+					"navigationBarTitleText": "选择通知类型"
+				}
+			},
+			{
+				"path": "notice/chooseTemplate",
+				"style": {
+					"navigationBarTitleText": "选择模板"
+				}
+			},
+			{
+				"path": "task/index",
+				"style": {
+					"navigationBarTitleText": "作业记录",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "task/taskDetail",
+				"style": {
+					"navigationBarTitleText": "作业详情"
+				}
+			},
+			{
+				"path": "task/redFlower",
+				"style": {
+					"navigationBarTitleText": "作业红花榜"
+				}
+			},
+			{
+				"path": "task/taskTotal",
+				"style": {
+					"navigationBarTitleText": "作业统计"
+				}
+			},
+			{
+				"path": "task/addTask",
+				"style": {
+					"navigationBarTitleText": "新增作业"
+				}
+			},
+			{
+				"path": "task/taskSuccess",
+				"style": {
+					"navigationBarTitleText": "发布成功"
+				}
+			},
+			{
+				"path": "task/seeTask",
+				"style": {
+					"navigationBarTitleText": "阅读情况"
+				}
+			},
+			{
+				"path": "task/submitTask",
+				"style": {
+					"navigationBarTitleText": "提交作业"
+				}
+			},
+			{
+				"path": "album/index",
+				"style": {
+					"navigationBarTitleText": "班级相册"
+				}
+			},
+			{
+				"path": "album/createAlbum",
+				"style": {
+					"navigationBarTitleText": "创建相册"
+				}
+			},
+			{
+				"path": "album/photoList",
+				"style": {
+					"navigationBarTitleText": "相片列表"
+				}
+			},
+			{
+				"path": "album/imgPreview",
+				"style": {
+					"navigationBarTitleText": "相片展示"
+				}
+			},
+			{
+				"path": "class-circle/index",
+				"style": {
+					"navigationBarTitleText": "班级风采",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "class-circle/form",
+				"style": {
+					"navigationBarTitleText": "发布动态"
+				}
+			},
+			{
+				"path": "class-circle/newList",
+				"style": {
+					"navigationBarTitleText": "消息列表",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "class-circle/detail",
+				"style": {
+					"navigationBarTitleText": "动态详情"
+				}
+			}
+		]
+	},
+	{
+		"root": "pages-consume",
+		"pages": [
+			{
+				"path": "one-card/index",
+				"style": {
+					"navigationBarTitleText": "一卡通消费账户",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "one-card/billDetail",
+				"style": {
+					"navigationBarTitleText": "账单详情"
+				}
+			},
+			{
+				"path": "one-card/recharge",
+				"style": {
+					"navigationBarTitleText": "账户充值"
+				}
+			},
+			{
+				"path": "one-card/alipay",
+				"style": {
+					"navigationBarTitleText": "支付宝支付"
+				}
+			}
+		]
+	}
+	],
+	"preloadRule": {
+		"pages-basedata/index/home": {
+			"network": "all",
+			"packages": ["__APP__"]
+		}
+	},
+	"globalStyle": {
+		// 禁用头部导航栏
+		"h5": {
+			"titleNView": false
+		},
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#7691fa",
+		"backgroundColor": "#fff"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "pages/index/index", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

@@ -1,0 +1,310 @@
+body {
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #f5f5f5;
+}
+/**浮动**/
+.float-l {
+  float: left;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #ccc;
+}
+
+/**表格背景样式**/
+.ant-layout-content {
+  margin: 10px 10px 0 10px !important;
+}
+.ant-table-body {
+  background-color: #fff !important;
+}
+
+/**界面空白区域**/
+.ant-layout {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  background: #f5f5f5 !important;
+}
+
+.page-layout {
+  width: 100%;
+  margin-top: 10px;
+  /**没有tab导航时为100% - 25(100% - 25)**/
+}
+.ant-table-placeholder,
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  border-bottom: 1px #f5f5f5 solid !important;
+}
+
+.ant-pro-multi-tab {
+  margin: -6px -24px 0px -16px !important;
+}
+
+/**表单查询**/
+.search-form {
+  height: 40px;
+  margin-top: 13px;
+}
+
+.form-text {
+  color: #666;
+  margin-left: 15px;
+}
+
+.input-name {
+  width: 120px !important;
+}
+
+.select-type {
+  width: 140px !important;
+}
+
+.search-btn-mar {
+  margin-left: 15px;
+}
+.right-content {
+  flex: 1;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+/**分页**/
+
+.table-top {
+  margin-top: 20px;
+}
+
+.tab-tree {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+/**默认图片**/
+
+.person-bg-img {
+  width: 120px;
+  height: 140px;
+  background: url('../img/nouser.jpg') no-repeat;
+  background-size: 120px 140px;
+}
+
+.photo-bg-img {
+  width: 120px;
+  height: 140px;
+  display: block;
+}
+
+/**按钮类**/
+.room-button {
+  cursor: pointer;
+  margin-top: 18px;
+  width: 110px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: rgb(61, 164, 255);
+}
+.type-button {
+  cursor: pointer;
+  margin-left: 12px;
+  border: 1px @main-color solid;
+  color: @main-color;
+  background: #d6ebfe;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 16px;
+  border-radius: 3px;
+}
+
+/**房间列表区域**/
+.main-container {
+  padding: 15px 10px;
+}
+.room-container {
+  flex: 1;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+/**弹性盒子布局**/
+/** 伸缩盒子盒子 **/
+
+.qui-fx {
+  display: flex;
+}
+
+.qui-bg-fff {
+  background-color: #fff;
+}
+
+.qui-fx-ver {
+  display: flex;
+  flex-direction: column;
+}
+
+/**水平垂直居中**/
+.qui-fx-ac-jc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/**垂直居中**/
+.qui-fx-ac {
+  display: flex;
+  align-items: center;
+}
+
+/**垂直居下**/
+.qui-fx-ae {
+  display: flex;
+  align-items: flex-end;
+}
+
+/**水平居中**/
+.qui-fx-jc {
+  display: flex;
+  justify-content: center;
+}
+
+/**水平居右**/
+.qui-fx-je {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/**水平两端对齐**/
+.qui-fx-jsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**水平等间距对齐**/
+.qui-fx-jsa {
+  display: flex;
+  justify-content: space-around;
+}
+
+/**水平换行**/
+.qui-fx-wp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.qui-fx-f1 {
+  min-width: 0px;
+  flex: 1;
+  position: relative;
+}
+
+.qui-fx-f2 {
+  min-width: 0px;
+  flex: 2;
+  position: relative;
+}
+
+.qui-te {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+/**公共按钮**/
+.add-btn {
+  margin-right: 10px;
+  background: #6882da !important;
+  color: #fff !important;
+}
+
+.del-btn {
+  margin-right: 10px;
+  background: #da8667 !important;
+  color: #fff !important;
+}
+
+.export-btn {
+  margin-right: 10px;
+  background: #67bcda !important;
+  color: #fff !important;
+}
+
+.export-all-btn {
+  margin-right: 10px;
+  background: #67dabf !important;
+  color: #fff !important;
+}
+
+/**公共操作按钮**/
+.detail-action-btn {
+  margin-right: 5px;
+  background: #909399 !important;
+  color: #fff !important;
+}
+
+.power-action-btn {
+  margin-right: 5px;
+  background: #f56c6c !important;
+  color: #fff !important;
+}
+
+.user-action-btn {
+  margin-right: 5px;
+  background: #e6a23c !important;
+  color: #fff !important;
+}
+
+.add-action-btn {
+  margin-right: 5px;
+  background: #6882da !important;
+  color: #fff !important;
+}
+
+.edit-action-btn {
+  margin-right: 5px;
+  background: #67bcda !important;
+  color: #fff !important;
+}
+
+.del-action-btn {
+  margin-right: 5px;
+  background: #ff4949 !important;
+  color: #fff !important;
+}
+
+.ant-btn:hover {
+  opacity: 0.6;
+  border: 1px transparent solid !important;
+}
+
+.ant-btn:focus {
+  border: 1px transparent solid !important;
+}
