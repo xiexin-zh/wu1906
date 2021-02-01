@@ -1,0 +1,339 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// 课程表
+		{
+			"path": "pages/class-schedule/class-schedule-t/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-schedule/class-schedule-p/index",
+			"style": {}
+		},
+		// 班级风采
+		{
+			"path": "pages/class-style/class-style-t/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-style/class-style-t/form",
+			"style": {}
+		},
+		{
+			"path": "pages/class-style/class-style-t/album",
+			"style": {}
+		},
+		{
+			"path": "pages/class-style/class-style-t/imgList",
+			"style": {}
+		},
+		{
+			"path": "pages/class-style/class-style-p/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-style/class-style-p/album",
+			"style": {}
+		},
+		{
+			"path": "pages/class-style/class-style-p/imgList",
+			"style": {}
+		},
+		//倒计时
+		{
+			"path": "pages/countDown/countDown-t/index",
+			"style": {}
+		}, {
+			"path": "pages/countDown/countDown-t/form",
+			"style": {}
+		},
+		//值日生
+		{
+			"path": "pages/duty/duty-t/index",
+			"style": {}
+		}, {
+			"path": "pages/duty/duty-t/check",
+			"style": {}
+		},
+		{
+			"path": "pages/duty/duty-t/select",
+			"style": {}
+		},
+		{
+			"path": "pages/duty/duty-p/check",
+			"style": {}
+		},
+		//考试计划
+		{
+			"path": "pages/examPlan/examPlan-t/index",
+			"style": {}
+		},
+		{
+			"path": "pages/examPlan/examPlan-p/index",
+			"style": {}
+		},
+		{
+			"path": "pages/examPlan/examPlan-p/detail",
+			"style": {}
+		},
+		//考试成绩
+		{
+			"path": "pages/examAchievement/examAchievement-t/index",
+			"style": {}
+		}, {
+			"path": "pages/examAchievement/examAchievement-t/detail",
+			"style": {}
+		},
+		// 留言
+		{
+			"path": "pages/class-message/class-message-p/index",
+			"style": {}
+		},
+		// 学习园地
+		{
+			"path": "pages/study-ground/study-ground-p/index"
+		},
+		{
+			"path": "pages/study-ground/study-ground-t/index"
+		},
+		{
+			"path": "pages/study-ground/study-ground-t/form"
+		},
+		{
+			"path": "pages/study-ground/component/office"
+		},
+		{
+			"path": "pages/study-ground/component/detail"
+		},
+		// 作业
+		{
+			"path": "pages/class-homework/class-homework-t/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-homework/class-homework-t/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/class-homework/class-homework-t/form",
+			"style": {}
+		},
+		{
+			"path": "pages/class-homework/class-homework-p/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-homework/class-homework-p/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/class-homework/class-homework-p/form",
+			"style": {}
+		},
+		// 调代课
+		{
+			"path": "pages/transfer-course/index"
+		},
+		{
+			"path": "pages/transfer-course/form"
+		},
+		{
+			"path": "pages/transfer-course/detail"
+		},
+		//班级圈
+		{
+			"path": "pages/class-circle/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-circle/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/class-circle/form",
+			"style": {}
+		},
+		{
+			"path": "pages/class-circle/newList",
+			"style": {}
+		},
+		//校园概况
+		{
+			"path": "pages/school-intro/index"
+		},
+		//师生风采
+		{
+			"path": "pages/teacher-show/index"
+		},
+		{
+			"path": "pages/teacher-show/add-teacher"
+		},
+		//班级荣誉
+		{
+			"path": "pages/class-honor/index"
+		},
+		{
+			"path": "pages/class-honor/form"
+		},
+		//电子板报
+		{
+			"path": "pages/class-newspaper/index"
+		},
+		//校园活动
+		{
+			"path": "pages/school-activity/index"
+		},
+		{
+			"path": "pages/school-activity/form"
+		},
+		//失物招领
+		{
+			"path": "pages/lost-found/lost-found-p/index",
+			"style": {}
+		}, {
+			"path": "pages/lost-found/lost-found-t/index",
+			"style": {}
+		}, {
+			"path": "pages/lost-found/lost-found-t/form",
+			"style": {}
+		},
+		//相册视频
+		{
+			"path": "pages/album-manage/index",
+			"style": {}
+		},
+		{
+			"path": "pages/album-manage/form",
+			"style": {}
+		},
+		{
+			"path": "pages/album-manage/album",
+			"style": {}
+		},
+		{
+			"path": "pages/album-manage/imgList",
+			"style": {}
+		},
+		{
+			"path": "pages/album-manage/sendTo",
+			"style": {}
+		},
+		{
+			"path": "pages/album-manage/fullScreen",
+			"style": {}
+		},
+		{
+			"path": "pages/video-manage/index",
+			"style": {}
+		},
+		{
+			"path": "pages/video-manage/form",
+			"style": {}
+		},
+		{
+			"path": "pages/video-manage/sendTo",
+			"style": {}
+		},
+		{
+			"path": "pages/video-manage/fullScreen",
+			"style": {}
+		},
+		//表扬栏
+		{
+			"path": "pages/praise-column/praise-column-t/class/form",
+			"style": {}
+		}, {
+			"path": "pages/praise-column/praise-column-t/class/index",
+			"style": {}
+		}, {
+			"path": "pages/praise-column/praise-column-t/personal/detail",
+			"style": {}
+		}, {
+			"path": "pages/praise-column/praise-column-t/personal/form",
+			"style": {}
+		}, {
+			"path": "pages/praise-column/praise-column-t/personal/index",
+			"style": {}
+		},
+		{
+			"path": "pages/praise-column/praise-column-p/index",
+			"style": {}
+		}, {
+			"path": "pages/praise-column/praise-column-p/detail",
+			"style": {}
+		},
+		// 班级德育
+		{
+			"path": "pages/moral/index",
+			"style": {}
+		},
+		{
+			"path": "pages/moral/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/moral/add",
+			"style": {}
+		}, {
+			"path": "pages/dorm/record-detail/index",
+			"style": {}
+		},
+		// 个人德育
+		{
+			"path": "pages/class-moral/index",
+			"style": {}
+		},
+		{
+			"path": "pages/class-moral/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/class-moral/add",
+			"style": {}
+		},
+		{
+			"path": "pages/class-moral/record",
+			"style": {}
+		},
+		// 行为评价
+		{
+			"path": "pages/behavior/index",
+			"style": {}
+		},
+		{
+			"path": "pages/behavior/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/behavior/add",
+			"style": {}
+		},
+		{
+			"path": "pages/behavior/record",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		// 禁用头部导航栏
+		"h5": {
+			"titleNView": false
+		},
+		"usingComponents": {
+			"ly-tree-node": "/components/ly-tree/ly-tree-node"
+		},
+		//#ifdef H5
+		"pullToRefresh": {
+			"style": "circle",
+			"color": "#FC3F78",
+			"offset": "0px"
+		},
+		//#endif
+		"onReachBottomDistance": 200,
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "智慧校园",
+		"navigationBarBackgroundColor": "#007aff",
+		"backgroundColor": "#F8F8F8"
+	}
+}

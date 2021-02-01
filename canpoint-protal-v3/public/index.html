@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" style="overflow:hidden">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1" />
+    <title>平安智慧校园云平台</title>
+    <meta http-equiv="content-Type" content="text/html charset=UTF-8" />
+    <meta name="keywords" content="武汉全品文教, 平安校园, 安防校园云平台" />
+    <meta name="description" content="武汉全品文教安防校园云平台" />
+    <meta name="author" content="武汉全品教育科技有限公司" />
+    <meta name="renderer" content="webkit" />
+    <meta name="Copyright" content="武汉全品教育科技有限公司版权所有" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <style>
+      html {
+        overflow: hidden;
+      }
+      body {
+        overflow: hidden !important;
+      }
+      .loading-box {
+        position: absolute;
+        z-index: 999;
+        left: 50%;
+        top: 50%;
+        margin: -60px 0 0 -20px;
+        width: 40px;
+        height: 40px;
+      }
+      @keyframes k-loadingD {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .k-ring-1 {
+        animation: k-loadingD 1.5s 0s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 6px dashed #666;
+        border-radius: 100%;
+      }
+    </style>
+    <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ %>
+    <script type="text/javascript" src="<%= item %>"></script>
+    <% }) %>
+  </head>
+
+  <body>
+    <noscript>
+      <strong>很抱歉, 您的浏览器不支持JavaScript</strong>
+    </noscript>
+    <div id="app">
+      <div class="loading-box">
+        <div class="k-ring-1"></div>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>

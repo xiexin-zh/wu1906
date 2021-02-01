@@ -1,0 +1,38 @@
+// 此文件为uView的主题变量，这些变量目前只能通过uni.scss引入才有效，另外由于
+// uni.scss中引入的样式会同时混入到全局样式文件和单独每一个页面的样式中，造成微信程序包太大
+// 故uni.scss只建议放scss变量名相关样式，其他的样式可以通过main.js或者App.vue引入
+
+$u-main-color: #333333;
+$u-content-color: #666666;
+$u-tips-color: #999999;
+$u-light-color: #cccccc;
+$u-border-color: #eeeeee;
+$u-bg-color: #f4f7fc;
+
+$u-type-primary: #0084ff;
+$u-type-primary-disabled: #c2e1ff;
+$u-type-primary-dark: #0074e0;
+$u-type-primary-light: #ebf5ff;
+
+$u-type-warning: #f5b111;
+$u-type-warning-disabled: #fbdf9d;
+$u-type-warning-dark: #eba70a;
+$u-type-warning-light: #fef9eb;
+
+$u-type-success: #00a35f;
+$u-type-success-disabled: #adffdd;
+$u-type-success-dark: #008f53;
+$u-type-success-light: #ebfff7;
+
+$u-type-error: #ff5454;
+$u-type-error-disabled: #ffc2c2;
+$u-type-error-dark: #ff3333;
+$u-type-error-light: #ffebeb;
+
+$u-type-info: #909399;
+$u-type-info-disabled: #c8c9cc;
+$u-type-info-dark: #82848a;
+$u-type-info-light: #f4f4f5;
+
+$u-form-item-height: 70rpx;
+$u-form-item-border-color: #dcdfe6;

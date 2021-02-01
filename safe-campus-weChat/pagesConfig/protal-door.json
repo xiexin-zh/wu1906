@@ -1,0 +1,291 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// 门禁管理
+		{
+			"path": "pages/door/door-t/doorRecord/index",
+			"style": {
+				"navigationBarTitleText": "门禁记录"
+			}
+		},
+		{
+			"path": "pages/door/door-t/doorRecord/detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},
+		{
+			"path": "pages/door/door-p/doorRecord/index",
+			"style": {
+				"navigationBarTitleText": "门禁记录"
+			}
+		},
+		{
+			"path": "pages/door/door-p/doorRecord/detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},
+		{
+			"path": "pages/door/door-t/doorManage/index",
+			"style": {
+				"navigationBarTitleText": "权限管理"
+			}
+		},
+		{
+			"path": "pages/door/door-t/doorManage/detail",
+			"style": {
+				"navigationBarTitleText": "人员列表"
+			}
+		},
+		{
+			"path": "pages/door/door-t/doorManage/add",
+			"style": {
+				"navigationBarTitleText": "添加成员"
+			}
+		},
+		{
+			"path": "pages/door/door-t/doorRecord/index",
+			"style": {
+				"navigationBarTitleText": "门禁记录"
+			}
+		},
+		{
+			"path": "pages/door/door-t/doorRecord/detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},
+		// 教师访客管理
+		{
+			"path": "pages/visitor/visitor-t/visitorLog/index",
+			"style": {
+				"navigationBarTitleText": "访客记录"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/visitorLog/detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/comeLog/index",
+			"style": {
+				"navigationBarTitleText": "来访记录"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/comeLog/detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/appointment/index",
+			"style": {
+				"navigationBarTitleText": "预约审批"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/appointment/detail",
+			"style": {
+				"navigationBarTitleText": "审批详情"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/invite/index",
+			"style": {
+				"navigationBarTitleText": "来访邀约"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/invite/detail",
+			"style": {
+				"navigationBarTitleText": "邀约详情"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-t/invite/form",
+			"style": {
+				"navigationBarTitleText": "发起邀约"
+			}
+		},
+		// 家长访客管理
+		{
+			"path": "pages/visitor/visitor-p/appointment/index",
+			"style": {
+				"navigationBarTitleText": "预约审批"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-p/appointment/detail",
+			"style": {
+				"navigationBarTitleText": "审批详情"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-p/appointment/form",
+			"style": {
+				"navigationBarTitleText": "发起预约"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-p/invite/index",
+			"style": {
+				"navigationBarTitleText": "来访邀约"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-p/invite/detail",
+			"style": {
+				"navigationBarTitleText": "邀约详情"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-p/visitLog/index",
+			"style": {
+				"navigationBarTitleText": "来访记录"
+			}
+		},
+		{
+			"path": "pages/visitor/visitor-p/visitLog/detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},
+		// 教师考勤模块
+		{
+			"path": "pages/attendance/attendance-t/attendance/index",
+			"style": {
+				"navigationBarTitleText": "我的考勤"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/statistics/index",
+			"style": {
+				"navigationBarTitleText": "考勤统计"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/leave/index",
+			"style": {
+				"navigationBarTitleText": "我的请假"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/studentAttendance/index",
+			"style": {
+				"navigationBarTitleText": "学生考勤"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/studentStatistics/index",
+			"style": {
+				"navigationBarTitleText": "学生统计"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/studentStatistics/record",
+			"style": {
+				"navigationBarTitleText": "统计记录"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/leave/detail",
+			"style": {
+				"navigationBarTitleText": "请假详情"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/leave/add",
+			"style": {
+				"navigationBarTitleText": "发起请假"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/studentLeave/index",
+			"style": {
+				"navigationBarTitleText": "学生请假"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/studentLeave/detail",
+			"style": {
+				"navigationBarTitleText": "请假详情"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/attendanceRecord/index",
+			"style": {
+							"navigationBarTitleText": "外出记录"
+			}
+		},
+		{
+			"path": "pages/attendance/attendance-t/studentLeave/add",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-t/statistics/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-t/teacherAttendance/index",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-t/teacherAttendance/detail",
+			"style": {}
+		},
+		// 家长考勤管理
+		{
+			"path": "pages/attendance/attendance-p/attendance/index",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-p/statistics/index",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-p/leave/index",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-p/leave/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-p/leave/add",
+			"style": {}
+		},
+		{
+			"path": "pages/attendance/attendance-t/attendanceRecord/index",
+			"style": {
+				"navigationBarTitleText": "外出记录"
+			}
+		}
+	],
+	"globalStyle": {
+		// 禁用头部导航栏
+		"h5": {
+			"titleNView": false
+		},
+		"usingComponents": {
+			"ly-tree-node": "/components/ly-tree/ly-tree-node"
+		},
+		//#ifdef H5
+		"pullToRefresh": {
+			"style": "circle",
+			"color": "#FC3F78",
+			"offset": "0px"
+		},
+		//#endif
+		"onReachBottomDistance": 200,
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "智慧校园",
+		"navigationBarBackgroundColor": "#007aff",
+		"backgroundColor": "#F8F8F8"
+	}
+}

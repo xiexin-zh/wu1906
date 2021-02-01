@@ -1,0 +1,297 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// 安防系统-安全巡检
+		{
+			"path": "pages/safe/index"
+		},
+		{
+			"path": "pages/safe/detail"
+		},
+		{
+			"path": "pages/safe/add"
+		},
+		{
+			"path": "pages/safe/item"
+		},
+		{
+			"path": "pages/safe/list"
+		},
+		{
+			"path": "pages/safe/my"
+		},
+		{
+			"path": "pages/safe/record"
+		},
+		{
+			"path": "pages/safe/schedule"
+		},
+		{
+			"path": "pages/safe/task"
+		},
+		// 隐患管理
+		{
+			"path": "pages/hazard-mgt/index"
+		},
+		{
+			"path": "pages/hazard-mgt/assignDetail"
+		},
+		{
+			"path": "pages/hazard-mgt/addDanger"
+		},
+		{
+			"path": "pages/hazard-mgt/dealWithDetail"
+		},
+		// 专项检查
+		{
+			"path": "pages/special/index"
+		},
+		{
+			"path": "pages/special/add"
+		},
+		{
+			"path": "pages/special/detail"
+		},
+		{
+			"path": "pages/special/submit"
+		},
+		// 安全事故
+		{
+			"path": "pages/accident/index"
+		},
+		{
+			"path": "pages/accident/add"
+		},
+		{
+			"path": "pages/accident/detail"
+		},
+		// 巡查值班
+		{
+			"path": "pages/inspect/index"
+		},
+		{
+			"path": "pages/inspect/add"
+		},
+		{
+			"path": "pages/inspect/area"
+		},
+		{
+			"path": "pages/inspect/end"
+		},
+		{
+			"path": "pages/inspect/detail"
+		},
+		{
+			"path": "pages/inspect/map"
+		},
+		{
+			"path": "pages/inspect/submit"
+		},
+		// 风险评估
+		{
+			"path": "pages/risk-assess/index",
+			"style": {}
+		},
+		{
+			"path": "pages/risk-assess/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/risk-assess/add",
+			"style": {}
+		},
+		// 风险辨识
+		{
+			"path": "pages/risk-identify/index",
+			"style": {}
+		},
+		{
+			"path": "pages/risk-identify/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/risk-identify/add",
+			"style": {}
+		},
+		{
+			"path": "pages/risk-identify/choose",
+			"style": {}
+		},
+		//安全任务
+		{
+			"path": "pages/safety-task/index"
+		},
+		{
+			"path": "pages/safety-task/fillIn"
+		},
+		{
+			"path": "pages/safety-task/release"
+		},
+		{
+			"path": "pages/safety-task/postTask"
+		},
+		{
+			"path": "pages/safety-task/seeCompletion"
+		},
+		{
+			"path": "pages/safety-task/taskStatus"
+		},
+		// 安全教育
+		{
+			"path": "pages/safety-knowledge/index"
+		},
+		{
+			"path": "pages/safety-knowledge/detail"
+		},
+		{
+			"path": "pages/safety-knowledge/class"
+		},
+		{
+			"path": "pages/safety-knowledge/classDetail"
+		},
+		{
+			"path": "pages/safety-knowledge/classBegin"
+		},
+		{
+			"path": "pages/safety-knowledge/exercise"
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/index",
+			"style": {
+				"navigationBarTitleText": "安全测评"
+			}
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/unifyExam",
+			"style": {
+				"navigationBarTitleText": "统一考试"
+			}
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/randomDoEsc",
+			"style": {
+				"navigationBarTitleText": "随机做题"
+			}
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/specialDoEsc",
+			"style": {
+				"navigationBarTitleText": "专项做题"
+			}
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/hardDoEsc",
+			"style": {
+				"navigationBarTitleText": "难题攻克"
+			}
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/simulateExam",
+			"style": {
+				"navigationBarTitleText": "模拟考试"
+			}
+		},
+		{
+			"path": "pages/safety-knowledge/appraisal/result",
+			"style": {
+				"navigationBarTitleText": "测评结果"
+			}
+		},
+		//安全应急
+		{
+			"path": "pages/safety-call/index",
+			"style": {
+				"navigationBarTitleText": "应急喊话"
+			}
+		},
+		{
+			"path": "pages/safety-management/index",
+			"style": {
+				"navigationBarTitleText": "作息广播管理"
+			}
+		},
+		{
+			"path": "pages/safety-management/add",
+			"style": {
+				"navigationBarTitleText": "添加作息广播"
+			}
+		},
+		{
+			"path": "pages/safety-plan/index",
+			"style": {
+				"navigationBarTitleText": "应急预案"
+			}
+		},
+		{
+			"path": "pages/safety-plan/details",
+			"style": {
+				"navigationBarTitleText": "预案详情"
+			}
+		},
+		{
+			"path": "pages/safety-plan/broadcast/index",
+			"style": {
+				"navigationBarTitleText": "应急广播"
+			}
+		},
+		{
+			"path": "pages/safety-plan/routerMap",
+			"style": {
+				"navigationBarTitleText": "演练疏散线路图"
+			}
+		},
+		{
+			"path": "pages/safety-plan/team",
+			"style": {
+				"navigationBarTitleText": "应急队伍"
+			}
+		},
+		{
+			"path": "pages/safety-plan/equipment",
+			"style": {
+				"navigationBarTitleText": "应急演练器材"
+			}
+		},
+		{
+			"path": "pages/safety-plan/file",
+			"style": {
+				"navigationBarTitleText": "应急演练文件"
+			}
+		},
+		{
+			"path": "pages/safety-keyAlarm/index",
+			"style": {
+				"navigationBarTitleText": "一键报警"
+			}
+		},
+		{
+			"path": "pages/safety-call/index",
+			"style": {
+				"navigationBarTitleText": "应急喊话"
+			}
+		}
+	],
+	"globalStyle": {
+		// 禁用头部导航栏
+		"h5": {
+			"titleNView": false
+		},
+		"usingComponents": {
+			"ly-tree-node": "/components/ly-tree/ly-tree-node"
+		},
+		//#ifdef H5
+		"pullToRefresh": {
+			"style": "circle",
+			"color": "#FC3F78",
+			"offset": "0px"
+		},
+		//#endif
+		"onReachBottomDistance": 200,
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "智慧校园",
+		"navigationBarBackgroundColor": "#007aff",
+		"backgroundColor": "#F8F8F8"
+	}
+}

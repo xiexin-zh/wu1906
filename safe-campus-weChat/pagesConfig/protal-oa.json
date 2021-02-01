@@ -1,0 +1,144 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		//物品管理报修
+		{
+			"path": "pages/goods-repair/index",
+			"style": {}
+		},
+		{
+			"path": "pages/goods-repair/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/goods-repair/form",
+			"style": {}
+		},
+		{
+			"path": "pages/collect-repair/index",
+			"style": {}
+		},
+		{
+			"path": "pages/collect-repair/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/collect-repair/form",
+			"style": {}
+		},
+		//场地预定
+		{
+			"path": "pages/site-booking/index",
+			"style": {}
+		},
+		{
+			"path": "pages/site-booking/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/site-booking/form",
+			"style": {}
+		},
+		//活动发布
+		{
+			"path": "pages/activity-booking/index",
+			"style": {}
+		},
+		{
+			"path": "pages/activity-booking/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/activity-booking/form",
+			"style": {}
+		},
+		{
+			"path": "pages/activity-booking/meetRecord",
+			"style": {}
+		},
+		{
+			"path": "pages/activity-booking/sign",
+			"style": {}
+		},
+		{
+			"path": "pages/activity-booking/poster",
+			"style": {}
+		},
+		//会议管理
+		{
+			"path": "pages/meet-booking/index",
+			"style": {}
+		},
+		{
+			"path": "pages/meet-booking/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/meet-booking/form",
+			"style": {}
+		},
+		{
+			"path": "pages/meet-booking/meetRecord",
+			"style": {}
+		},
+		// 一卡通消费
+		{
+			"path": "pages/card-consume/index",
+			"style": {}
+		},
+		{
+			"path": "pages/card-consume/consumeRule",
+			"style": {}
+		},
+		{
+			"path": "pages/card-consume/recharge",
+			"style": {}
+		},
+		{
+			"path": "pages/card-consume/billDetail",
+			"style": {}
+		},
+		{
+			"path": "pages/card-consume/billStatistics",
+			"style": {}
+		},
+		{
+			"path": "pages/card-consume/alipay",
+			"style": {}
+		},
+		// 缴费模块
+		{
+			"path": "pages/campus-payment/campus-payment-p/detail"
+		},
+		{
+			"path": "pages/campus-payment/campus-payment-p/index"
+		},
+		{
+			"path": "pages/campus-payment/campus-payment-p/alipay",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		// 禁用头部导航栏
+		"h5": {
+			"titleNView": false
+		},
+		"usingComponents": {
+			"ly-tree-node": "/components/ly-tree/ly-tree-node"
+		},
+		//#ifdef H5
+		"pullToRefresh": {
+			"style": "circle",
+			"color": "#FC3F78",
+			"offset": "0px"
+		},
+		//#endif
+		"onReachBottomDistance": 200,
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "智慧校园",
+		"navigationBarBackgroundColor": "#007aff",
+		"backgroundColor": "#F8F8F8"
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// 培训管理
+		{
+			"path": "pages/academic-training/train-list/index"
+		},
+		{
+			"path": "pages/academic-training/train-result/index"
+		},
+		{
+			"path": "pages/academic-training/train-result/imgList",
+			"style": {}
+		},
+		{
+			"path": "pages/academic-training/train-result/upload"
+		},
+		{
+			"path": "pages/academic-training/sign-user/index"
+		},
+		//学习园地
+		{
+			"path": "pages/academic-studyGround/study-ground-p/index"
+		},
+		{
+			"path": "pages/academic-studyGround/study-ground-t/index"
+		},
+		{
+			"path": "pages/academic-studyGround/study-ground-t/form"
+		},
+		{
+			"path": "pages/academic-studyGround/component/office"
+		},
+		{
+			"path": "pages/academic-studyGround/component/detail"
+		},
+		// 信息变更
+		{
+			"path": "pages/academic-infoChange/info-change-t/index"
+		},
+		{
+			"path": "pages/academic-infoChange/info-change-t/form"
+		},
+		{
+			"path": "pages/academic-infoChange/info-change-p/index"
+		},
+		{
+			"path": "pages/academic-infoChange/info-change-p/form"
+		},
+		{
+			"path": "pages/academic-infoChange/component/detail"
+		}
+	],
+	"globalStyle": {
+		// 禁用头部导航栏
+		"h5": {
+			"titleNView": false
+		},
+		"usingComponents": {
+			"ly-tree-node": "/components/ly-tree/ly-tree-node"
+		},
+		//#ifdef H5
+		"pullToRefresh": {
+			"style": "circle",
+			"color": "#FC3F78",
+			"offset": "0px"
+		},
+		//#endif
+		"onReachBottomDistance": 200,
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "智慧校园",
+		"navigationBarBackgroundColor": "#007aff",
+		"backgroundColor": "#F8F8F8"
+	}
+}
